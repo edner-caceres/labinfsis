@@ -75,3 +75,18 @@ LINE 1: ...ES (3, 1, 200401694, '3456ddddsss', '2012-04-14', '2012-06-3...
 #7 C:\xampp\cakephp-2.0\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
 #8 C:\xampp\htdocs\labinfsis\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #9 {main}
+2012-04-18 19:37:24 Error: [PDOException] SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "id_cuenta" violates not-null constraint
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('INSERT INTO "pu...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(985): DboSource->execute('INSERT INTO "pu...')
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(1705): DboSource->create(Object(Registro), Array, Array)
+#4 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\RegistrosController.php(155): Model->save(Array)
+#5 [internal function]: RegistrosController->adm_add()
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(482): ReflectionMethod->invokeArgs(Object(RegistrosController), Array)
+#7 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#9 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-04-18 19:53:11 Error: [MissingControllerException] Controller class AdmController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
