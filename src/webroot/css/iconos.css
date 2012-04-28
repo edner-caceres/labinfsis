@@ -1,0 +1,141 @@
+/* 
+    Document   : iconos
+    Created on : 13-01-2011, 07:23:54 AM
+    Author     : Edner Elvis Caceres Lazo
+    Description:
+        Iconos usados en la aplicacion.
+*/
+
+
+/* 16x16*/
+
+/*.icon-add-16x16, .icon-edit-16x16, .icon-delete-16x16, .icon-save-16x16, .icon-cancel-16x16{
+    background-position:  5px center !important;
+    width: 24px !important;
+}*/
+
+.icon-add-16x16{
+    background-image: url(../img/icons/common/16x16/add.png) !important;
+}
+.icon-edit-16x16{
+    background-image: url(../img/icons/common/16x16/pencil.png) !important;
+}
+.icon-delete-16x16{
+    background-image: url(../img/icons/common/16x16/delete.png) !important;
+}
+.icon-save-16x16{
+    background-image: url(../img/icons/common/16x16/disk.png) !important;
+    
+}
+.icon-cancel-16x16{
+    background-image: url(../img/icons/common/16x16/cancel.png) !important;
+}
+/*32x32*/
+.icon-add-32x32{
+    background-image: url(../img/icons/common/32x32/add.png) !important;
+}
+.icon-delete-32x32{
+    background-image: url(../img/icons/common/32x32/delete.png) !important;
+}
+.icon-edit-32x32{
+    background-image: url(../img/icons/common/32x32/pencil.png) !important;
+}
+.icon-save-32x32{
+    background-image: url(../img/icons/common/32x32/disk.png) !important;
+}
+.icon-cancel-32x32{
+    background-image: url(../img/icons/common/32x32/cancel.png) !important ;
+}
+
+.icon-search-32x32 {
+    background-image:url(../img/icons/common/32x32/find.png) !important;
+}
+
+
+
+
+
+
+/* tools 16x16*/
+.icon-provider-16x16 {
+    background-image:url(../img/icons/application/16x16/provider.png) !important;
+}
+.icon-group-16x16 {
+    background-image:url(../img/icons/application/16x16/department.png) !important;
+   
+}
+.icon-roles-16x16 {
+    background-image:url(../img/icons/application/16x16/reseller_programm.png) !important;
+   
+}
+.icon-industry-16x16 {
+    background-image:url(../img/icons/application/16x16/building.png) !important;
+   
+}
+.icon-depot-16x16 {
+    background-image:url(../img/icons/application/16x16/depot.png) !important;
+}
+
+.icon-client-16x16 {
+    background-image:url(../img/icons/application/16x16/reseller_account.png) !important;
+}
+.icon-marcas-16x16{
+    background-image:url(../img/icons/application/16x16/copyright.png) !important;
+}
+.icon-employee-16x16 {
+    background-image:url(../img/icons/application/16x16/session_idle_time.png) !important;
+}
+.icon-ii-16x16 {
+    background-image:url(../img/icons/application/16x16/impuestos_internos.png) !important;
+}
+.icon-descuentos-16x16 {
+    background-image:url(../img/icons/application/16x16/descuentos.png) !important;
+}
+
+/* tools 32x32*/
+.icon-provider-32x32 {
+    background-image:url(../img/icons/application/32x32/provider.png) !important;
+}
+.icon-group-32x32 {
+    background-image:url(../img/icons/application/32x32/department.png) !important;
+}
+.icon-roles-32x32 {
+    background-image:url(../img/icons/application/32x32/reseller_programm.png) !important;
+   
+}
+.icon-industry-32x32 {
+    background-image:url(../img/icons/application/32x32/building.png) !important;
+   
+}
+.icon-depot-32x32 {
+    background-image:url(../img/icons/application/32x32/depot.png) !important;
+}
+.icon-client-32x32 {
+    background-image:url(../img/icons/application/32x32/reseller_account.png) !important;
+}
+.icon-marcas-32x32{
+    background-image:url(../img/icons/application/32x32/copyright.png) !important;
+}
+.icon-employee-32x32 {
+    background-image:url(../img/icons/application/32x32/session_idle_time.png) !important;
+}
+.icon-ii-32x32 {
+    background-image:url(../img/icons/application/32x32/impuestos_internos.png) !important;
+}
+.icon-descuentos-32x32 {
+    background-image:url(../img/icons/application/32x32/descuentos.png) !important;
+}
+
+/********************************************************************************/
+
+
+
+
+/* para sca*/
+.icon-home {
+    background-image:url(../img/icons/application/16x16/home16x16.png) !important;
+}
+
+
+
+
