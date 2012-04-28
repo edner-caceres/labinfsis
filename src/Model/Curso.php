@@ -37,9 +37,9 @@ class Curso extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
-				//'message' => 'Your custom message here',
+			'notempty' => array(
+				'rule' => array('custom', '/^[a-zA-Z0-9 ]*$/i'),
+				'message' => 'Solor caracteres alfanumericos y espacios',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

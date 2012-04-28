@@ -56,9 +56,9 @@ if (!defined('APP_DIR')) {
  * For ease of development CakePHP uses PHP's include_path.  If you
  * cannot modify your include_path set this value.
  *
- * Leaving this constant undefined will result in it being defined in Cake/bootstrap.php
+ * Leaving this constant undefined will result in it being defined in Cake/bootstrap.phpc:\\\frameworks\
  */
-define('CAKE_CORE_INCLUDE_PATH', 'C:' . DS . 'xampp' . DS . 'cakephp-2.1' . DS . 'lib');
+define('CAKE_CORE_INCLUDE_PATH', 'C:' . DS . 'Servidores' . DS. 'bitnami'. DS. 'frameworks'.DS . 'cakephp' . DS . 'lib');
 
 /**
  * Editing below this line should NOT be necessary.

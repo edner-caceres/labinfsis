@@ -26,7 +26,7 @@ Ext.application({
         });
         var panel_inventarios=Ext.create('Ext.Panel',{
 
-            title: 'Sistema de Inventarios',
+            title: 'Registro de Ingresos',
             layout: 'border',            
             items:[{             
                 id:'item-list',
@@ -107,56 +107,6 @@ Ext.application({
 
                         text: 'Ordenar',
                         iconCls:'icon-ordenar-aux'
-                    }]
-                }]
-            },'->', {
-                title: 'Catalogos',
-                xtype: 'buttongroup',
-                columns: 4,
-                defaults:{
-                    scale: 'large',
-                    iconAlign: 'top'
-                },
-                items:[{
-                    xtype: 'buttongroup',
-                    defaults:{
-                        scale: 'large',
-                        iconAlign: 'top'
-                    },
-                    items:[ {
-                        text: 'Proveedores',
-                        iconCls: 'icon-provider-32x32'
-                    },{
-                        text: 'Grupos',
-                        iconCls:'icon-group-32x32'
-                    }, {
-                        text: 'Roles',
-                        iconCls:'icon-roles-32x32'
-
-                    },{
-                        text:'Marcas',
-                        iconCls:'icon-marcas-32x32'
-                    },{
-                        text:'Industrias',
-                        iconCls:'icon-industry-32x32'
-                    },{
-                        text:'Almacenes',
-                        iconCls:'icon-depot-32x32'
-                    },{
-                        text:'Clientes',
-                        iconCls:'icon-client-32x32'
-                    },{
-                        text: 'Empleados',
-                        iconCls:'icon-employee-32x32'
-
-                    },{
-                        text: 'Dosificacion',
-                        iconCls:'icon-ii-32x32'
-
-                    },{
-                        text: 'Descuentos',
-                        iconCls:'icon-descuentos-32x32'
-
                     }]
                 }]
             }]

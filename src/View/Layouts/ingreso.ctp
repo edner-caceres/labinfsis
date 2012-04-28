@@ -29,8 +29,8 @@
         </title>
         <?php
             $opciones = array('inline' => true);
-            echo $this->Html->css('http://localhost:9191/libs/ext-4.0.7-gpl/resources/css/ext-all.css', 'stylesheet', $opciones);
-            echo $this->Html->script('http://localhost:9191/libs/ext-4.0.7-gpl/ext-all-dev.js', $opciones);
+            echo $this->Html->css('http://localhost/libs/extjs-4.1.0/resources/css/ext-all.css', 'stylesheet', $opciones);
+            echo $this->Html->script('http://localhost/libs/extjs-4.1.0/ext-all-dev.js', $opciones);
 
             echo $this->Html->css('iconos', 'stylesheet', $opciones);
             echo $this->Html->css('fondos', 'stylesheet', $opciones);
