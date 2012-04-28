@@ -6,7 +6,7 @@ App::uses('AppController', 'Controller');
  * @property Curso $Curso
  */
 class CursosController extends AppController {
-public $plugings = array('', )
+public $plugings = array('', );
 
 /**
  * index method
