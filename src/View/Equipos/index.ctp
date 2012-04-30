@@ -1,64 +1,71 @@
-<div class="equipos index">
-	<h2><?php echo __('Equipos');?></h2>
-	<table cellpadding="0" cellspacing="0">
-	<tr>
-			<th><?php echo $this->Paginator->sort('id');?></th>
-			<th><?php echo $this->Paginator->sort('estado_id');?></th>
-			<th><?php echo $this->Paginator->sort('nia');?></th>
-			<th><?php echo $this->Paginator->sort('codigo');?></th>
-			<th><?php echo $this->Paginator->sort('nombre_equipo');?></th>
-			<th><?php echo $this->Paginator->sort('descripcion_equipo');?></th>
-			<th class="actions"><?php echo __('Actions');?></th>
-	</tr>
-	<?php
-	foreach ($equipos as $equipo): ?>
-	<tr>
-		<td><?php echo h($equipo['Equipo']['id']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($equipo['Estado']['id'], array('controller' => 'estados', 'action' => 'view', $equipo['Estado']['id'])); ?>
-		</td>
-		<td><?php echo h($equipo['Equipo']['nia']); ?>&nbsp;</td>
-		<td><?php echo h($equipo['Equipo']['codigo']); ?>&nbsp;</td>
-		<td><?php echo h($equipo['Equipo']['nombre_equipo']); ?>&nbsp;</td>
-		<td><?php echo h($equipo['Equipo']['descripcion_equipo']); ?>&nbsp;</td>
-		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $equipo['Equipo']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $equipo['Equipo']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $equipo['Equipo']['id']), null, __('Are you sure you want to delete # %s?', $equipo['Equipo']['id'])); ?>
-		</td>
-	</tr>
-<?php endforeach; ?>
-	</table>
-	<p>
-	<?php
-	echo $this->Paginator->counter(array(
-	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
-	));
-	?>	</p>
+<?php
+        //echo $this->Html->charset('utf-8');
+	echo $this->Html->script('app.js', array('inline' => false));
+        echo $this->Html->css('DataView', 'stylesheet', array('inline' => false));
+?>
 
-	<div class="paging">
-	<?php
-		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
-		echo $this->Paginator->numbers(array('separator' => ''));
-		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
-	?>
-	</div>
+<div id="main_container">
+    <div id="main_content">
+        <div id="center_content">
+            <div class="left_content">
+                <div class="center_text"  style="height: 200px;">
+                    <h1 >Bienvenido al Sis-Inventarios</h1>
+                    <img  width="128" height="128" src="img/logo_institucion.gif"  class="img_left" alt="logo institucion"/>
+                    Sis-Inventarios, es un sistema de inventarios para las empresas importadoras y exportadoras de art�culos...
+                </div>
+                
+                <div class="center_text sistemas" >
+                    
+                    <h1 style ="color:#1E4E8F;">Sistemas Disponibles para el usuario</h1>
+                    <div id="menu-sistemas">
+                        <div class="news_tab">
+                            <img src="img/error128x128.png" alt="No inicio session" class="img_left" />
+                            <h3 style="color: #710000">No inicio session</h3>
+                            <hr />
+                            <p style="font-size: 14px;">Disculpe <b>No ha iniciado session</b>, para tener acceso al menu debe iniciar session primero.<br /><br />
+                                Para iniciar session haga click en el boton <b>Iniciar session</b> que se encuentra en la esquina superior derecha e ingrese sus credenciales.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div> <!-- end of left_content -->
+            <div class="right_content">
+                <div class="center_text">
+                    <h1>Avisos</h1>
+                    <ol class="commentlist">
+                        <li class="alt" id="comment-63">
+                            <cite>
+                                <img alt="" src="img/social_rss.png" class="avatar" height="40" width="40"/>Erwin Says: <br />
+                                <span class="comment-data">Comments are great!</span>
+                            </cite>
+                        </li>
+                        <li id="comment-67">
+                            <cite>
+                                <img alt="" src="img/social_rss.png" class="avatar" height="40" width="40"/>admin Says: <br />
+                                <span class="comment-data">ALorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero.Suspendisse bibendum.
+                                </span></cite>
+
+                        </li>
+                    </ol>
+                    <h1>Ultimas noticias</h1>
+                    <ol class="commentlist">
+                        <li class="alt" id="comment-63">
+                            <cite>
+                                <img alt="" src="img/calendar_news.png" class="avatar" height="40" width="40"/>Erwin Says: <br />
+                                <span class="comment-data">Comments are great!</span>
+                            </cite>
+                        </li>
+                        <li id="comment-67">
+                            <cite>
+                                <img alt="" src="img/calendar_news.png" class="avatar" height="40" width="40"/>admin Says: <br />
+                                <span class="comment-data">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero.</span>
+                            </cite>
+                        </li>
+                    </ol>
+                </div>
+            </div> <!-- end of right_content -->
+        </div>
+    </div>
+    <!-- end of main_content -->
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Equipo'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Estados'), array('controller' => 'estados', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Estado'), array('controller' => 'estados', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Movimientos'), array('controller' => 'movimientos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Movimiento'), array('controller' => 'movimientos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Registros'), array('controller' => 'registros', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Registro'), array('controller' => 'registros', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Reviciones'), array('controller' => 'reviciones', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Revicion'), array('controller' => 'reviciones', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Componentes'), array('controller' => 'componentes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Componente'), array('controller' => 'componentes', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Asignaciones'), array('controller' => 'asignaciones', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Asignacion'), array('controller' => 'asignaciones', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+<!-- end of main_container -->
