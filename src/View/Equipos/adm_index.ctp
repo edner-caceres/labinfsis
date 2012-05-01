@@ -15,7 +15,7 @@
 	<tr>
 		<td><?php echo h($equipo['Equipo']['id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($equipo['Estado']['id'], array('controller' => 'estados', 'action' => 'view', $equipo['Estado']['id'])); ?>
+			<?php echo $this->Html->link($equipo['Estado']['nombre_estado'], array('controller' => 'estados', 'action' => 'view', $equipo['Estado']['id'])); ?>
 		</td>
 		<td><?php echo h($equipo['Equipo']['nia']); ?>&nbsp;</td>
 		<td><?php echo h($equipo['Equipo']['codigo']); ?>&nbsp;</td>

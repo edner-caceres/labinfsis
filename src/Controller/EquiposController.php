@@ -25,9 +25,9 @@ class EquiposController extends AppController {
      * @return void
      */
     public function toList() {
-        $this->Equipo->recursive = 0;
+        $this->Equipo->recursive = 1;
         $this->layout = 'ajax';
-        $this->set('equipos', $this->paginate());
+        $this->set('equipos', $this->Equipo->find('all'));
     }
 
     /**

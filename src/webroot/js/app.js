@@ -16,18 +16,10 @@ Ext.application({
     ],
     
     launch: function() {
-        var dashboard = Ext.create('Ext.Panel',{
-            id: 'home',
-            iconCls: 'icon-home',
-            title: 'Dashboard',
-            contentEl:'main_container',
-            bodyStyle: 'background-color: transparent',
-            autoScroll: true
-        });
-        var panel_inventarios=Ext.create('Ext.Panel',{
-
-            title: 'Registro de Ingresos',
-            layout: 'border',            
+        
+        var panel_ingreso=Ext.create('Ext.Panel',{
+            layout: 'border',
+            region:'center',
             items:[{             
                 xtype: 'equipos',
                 region:'center'
@@ -35,18 +27,11 @@ Ext.application({
                 title: 'Reservas Pendientes',
                 collapsible: true,
                 region:'east',
-                html:'Detalle del item items.View',
+                html:'Lista de reservas pendiendes ',
                 width:400,
                 margins: '0 0 5 5'
 
             }]
-        });
-        var panel_principal = Ext.create('Ext.tab.Panel',{
-            activeItem: 'ftp-user-list',
-            region: 'center',
-            id: 'main',
-            items:[dashboard, panel_inventarios]
-
         });
 
         Ext.create('Ext.container.Viewport', {
@@ -55,7 +40,7 @@ Ext.application({
                 contentEl: 'header',
                 region:'north',
                 height: 40
-            },panel_principal,{
+            },panel_ingreso,{
                 contentEl: 'footer',
                 border: false,
                 region:'south'

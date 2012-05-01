@@ -1,4 +1,4 @@
-#phones {
+#items {
     background-color: #fff;
     text-shadow: #fff 0 1px 0;
     position: relative;
@@ -6,11 +6,11 @@
     height: auto;
 }
 
-#phones div.phone img {
+#items div.item img {
     margin-bottom: 1px;
 }
 
-#phones div.phone {
+#items div.item {
     float: left;
     padding: 8px 17px;
     margin: 5px;
@@ -20,34 +20,34 @@
     color: #333;
     font-size: 10px;
     font-family: "Helvetica Neue",sans-serif;
-    height: 130px;
-    width: 140px;
+    height: 126px;
+    width: 134px;
     overflow: hidden;
     border-top: 1px solid transparent;
     cursor: pointer;
 }
 
-.x-ie6 #phones div.phone,
-.x-ie7 #phones div.phone,
-.x-ie8 #phones div.phone {
+.x-ie6 #items div.item,
+.x-ie7 #items div.item,
+.x-ie8 #items div.item {
     border-top: none;
     padding: 3px 2px;
     margin: 2px;
 }
 
-#phones div.phone-hover {
+#items div.item-hover {
     background-color: #eee;
 }
 
-#phones .x-item-selected {
+#items .x-item-selected {
     background-color: #D3E1F1 !important;
 }
 
-#phones div.phone strong {
+#items div.item strong {
     color: #000;
     display: block;
 }
 
-#phones div.phone span {
+#items div.item span {
     color: #999;
 }

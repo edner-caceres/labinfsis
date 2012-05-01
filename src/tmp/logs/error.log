@@ -26,3 +26,25 @@
 2012-04-30 02:16:47 Error: [MissingControllerException] Controller class JsController could not be found.
 #0 D:\proyectos\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-04-30 16:21:52 Error: [MissingConnectionException] Database connection "SQLSTATE[08006] [7] FATAL:  database "labinfsis" does not exist" is missing, or could not be created.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(245): Postgres->connect()
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3382): ConnectionManager::getDataSource('default')
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(1083): Model->setDataSource('default')
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3408): Model->setSource('equipos')
+#5 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): Model->getDataSource()
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#7 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#8 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\EquiposController.php(20): Controller->paginate()
+#9 [internal function]: EquiposController->index()
+#10 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(EquiposController), Array)
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#13 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-04-30 16:43:50 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-04-30 22:18:50 Error: [MissingControllerException] Controller class LibsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

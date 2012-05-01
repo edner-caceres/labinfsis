@@ -45,16 +45,16 @@
                     <a id="menu" style="float:right;margin: 4px 10px;">
                     </a>
 
-                    <div class="api-title">Sis-Inventarios - Sistema de Inventarios</div>
+                    <div class="api-title">SAILC - Sistema de Administracion Integrado del Laboratorio de Computo - "Registro de Ingreso a los Laboratorios"</div>
                     <div id="content">
                     <?php echo $content_for_layout; ?>
                 </div>
                 <div id="footer">
                     <div style="float:left; padding-top:10px;">
-                        edca_abra_jhode - Todos los derechos reservados 2012
+                        Laboratorio de Computo - Todos los derechos reservados 2012
                     </div>
                     <div style="float:right;padding-left:2px;">
-                        <img src="img/extjs.gif" alt="ExtJS" /> | <img src="img/cakephp-logo.gif" alt="CakePHP" /> |<img src="img/postgreSQL.png" alt="PostgreSQL" />
+                        <img src="img/extjs.gif" alt="ExtJS" />  <img src="img/cakephp-logo.gif" alt="CakePHP" /> <img src="img/postgreSQL.png" alt="PostgreSQL" />
                     </div>
                 </div>
             </div>

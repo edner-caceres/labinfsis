@@ -6,6 +6,7 @@ Ext.define('labinfsis.model.Equipo', {
         mapping: 'id'
     },
     'estado_id',
+    'nombre_estado',
     'nia',
     'codigo',
     'nombre_equipo',
