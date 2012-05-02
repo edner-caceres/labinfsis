@@ -77,7 +77,7 @@ Ext.define('labinfsis.view.equipo.List' ,{
                 }]
             },{
                 xtype: 'tbtext',
-                text:'Edner Elvis Cáceres Lazo'
+                text:'<b>Edner Elvis Cáceres Lazo</b>'
             },{
                 xtype: 'tbtext',
                 text:'Administrador Lab. Computo'
