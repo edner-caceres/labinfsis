@@ -23,5 +23,9 @@ Ext.define('labinfsis.store.Equipos', {
             root: 'data',
             encode:true
         }
-    }
+    },
+    sorters: [{
+        property : 'nombre_laboratorio',
+        direction: 'asc'
+    }]
 });

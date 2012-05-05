@@ -15,8 +15,26 @@ Ext.define('labinfsis.controller.Equipos', {
     ],
     init: function() {
         this.control({
-            //functions
-            });
+            'equipos button[action=viewall]':{
+                toggle: this.filterView
+            },
+            'equipos button[action=viewoutservice]':{
+                toggle:this.filterView
+            },
+            'equipos button[action=viewactive]':{
+                toggle: this.filterView
+            }
+        });
+    },
+    filterView: function( button, pressed, eOpts){
+        var store = Ext.data.StoreManager.lookup('Equipos');
+        store.clearFilter();
+        store.resumeEvents();
+        var nameFilter = button.getId();
+        if(pressed && nameFilter =='active') store.filter('estado_id', 1);
+        else if(pressed && nameFilter =='outservice') store.filter('estado_id', 2);
+        
+        store.sort('nombre_equipo', 'ASC');
     }
 
 });

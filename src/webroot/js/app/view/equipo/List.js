@@ -40,47 +40,46 @@ Ext.define('labinfsis.view.equipo.List' ,{
             title:'Session',
             xtype:'buttongroup',
             columns:2,
-            items:[{
-                xtype: 'buttongroup',
-                rowspan:2,
-                items:[{
-                    iconCls: 'icon-add-32x32',
-                    scale:'large',
-                    menu:{
-                        xtype: 'menu',
-                        style: {
-                            overflow: 'visible'     // For the Combo popup
-                        },
-                        items:[{                    
-                            xtype:'combo',
-                            hideLabel: true,
-                            store: Ext.create('Ext.data.ArrayStore', {
-                                fields: ['abbr', 'state'],
-                                data : [['1','Laboratorio #1'],['2','Laboratorio #2'],['3','Laboratorio de Redes']]
-                            }),
-                            displayField: 'state',
-                            typeAhead: true,
-                            queryMode: 'local',
-                            triggerAction: 'all',
-                            emptyText: 'Seleccione un laboratorio...',
-                            selectOnFocus: true,
-                            iconCls:'no-icon'
-                        },'-',{
-                            text:'Informacion Personal'
-                        },{
-                            text:'Cambiar contraseña'
-                        },{
-                            text:'Salir',
-                            iconCls:'icon-cancel-16x16'
-                        }]
-                    }
-                }]
+            items:[{                
+                iconCls: 'icon-user-administrator-32x32',
+                scale:'large',
+                rowspan:4,
+                arrowAlign: 'bottom',
+                menu:{
+                    xtype: 'menu',
+                    style: {
+                        overflow: 'visible'     // For the Combo popup
+                    },
+                    items:[{
+                        text:'Informacion Personal'
+                    },{
+                        text:'Cambiar contraseña'
+                    },{
+                        text:'Salir',
+                        iconCls:'icon-cancel-16x16'
+                    }]
+                }
+               
             },{
                 xtype: 'tbtext',
-                text:'<b>Edner Elvis Cáceres Lazo</b>'
+                text:'<b> Usuario: <span style="color:#c00;">Edner Elvis Cáceres Lazo</span></b>'
             },{
                 xtype: 'tbtext',
-                text:'Administrador Lab. Computo'
+                text:'<b>Rol: Administrador</b>'
+            },{
+                xtype: 'tbseparator', 
+                height:5
+            },{                    
+                xtype:'combo',
+                hideLabel: true,
+                store: Ext.data.StoreManager.lookup('Laboratorios'),
+                valueField: 'id',
+                displayField: 'nombre_laboratorio',
+                editable: false,
+                queryMode: 'remote',
+                triggerAction: 'all',
+                value: 1,
+                width: 200
             }]
         },{
             title:'Ver',
@@ -88,6 +87,7 @@ Ext.define('labinfsis.view.equipo.List' ,{
             columns:3,
             items:[{
                 xtype: 'buttongroup',
+                title: 'Estados',
                 defaults:{
                     enableToggle: true,
                     scale:'large'
@@ -95,28 +95,47 @@ Ext.define('labinfsis.view.equipo.List' ,{
                 items:[{
                     text: 'Todos',
                     toggleGroup: 'view',
-                    action: 'all',
-                    pressed: true
+                    action: 'viewall',
+                    iconCls: 'icon-computer-32x32',
+                    id:'all'
+                },{
+                    text: 'Fuera de servicio',
+                    toggleGroup: 'view',
+                    action: 'viewoutservice',
+                    iconCls: 'icon-computer-error-32x32',
+                    id: 'outservice'
                 },{
                     text: 'Activos',
                     toggleGroup: 'view',
-                    action: 'active'
+                    action: 'viewactive',
+                    iconCls: 'icon-computer-active-32x32',
+                    id:'active',
+                    pressed: true
                 }]
             },{
                 xtype: 'buttongroup',
+                title:'Disponibilidad',
                 defaults:{
                     enableToggle: true,
                     scale:'large'
                 },
                 items:[{
+                    text: 'Todos',
                     toggleGroup: 'filter',
-                    text: 'Disponibles',
-                    action: 'free',
+                    action: 'filterall',
+                    iconCls: 'icon-computer-all-32x32',
                     pressed: true
                 },{
                     toggleGroup: 'filter',
+                    text: 'Disponibles',
+                    iconCls: 'icon-computer-free-32x32',
+                    action: 'filterfree'
+                    
+                },{
+                    toggleGroup: 'filter',
                     text: 'En uso',
-                    action:'used'
+                    iconCls: 'icon-computer-busy-32x32',
+                    action:'filterused'
                 }]
             }]
         }]

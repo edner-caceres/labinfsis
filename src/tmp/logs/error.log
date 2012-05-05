@@ -48,3 +48,110 @@
 2012-04-30 22:18:50 Error: [MissingControllerException] Controller class LibsController could not be found.
 #0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-05-03 18:43:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-05-03 18:43:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-05-05 13:48:14 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:14 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:14 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:14 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:15 Error: [MissingActionException] Action EquiposController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+
+2012-05-05 13:48:15 Error: [MissingActionException] Action EquiposController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:26 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:26 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:26 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:26 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:26 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:26 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:26 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:28 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:28 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:28 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:28 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:28 Error: [MissingActionException] Action EquiposController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:28 Error: [MissingActionException] Action EquiposController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-05-05 13:48:28 Error: [MissingActionException] Action EquiposController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
