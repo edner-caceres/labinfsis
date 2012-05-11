@@ -25,9 +25,16 @@ class EquiposController extends AppController {
      * @return void
      */
     public function toList() {
-        $this->Equipo->recursive = 1;
+        $this->Equipo->recursive = 2;
         $this->layout = 'ajax';
-        $this->set('equipos', $this->Equipo->find('all'));
+        $laboratorio = isset($this->request->query['laboratorio']) ? $this->request->query['laboratorio'] : 1;
+        $this->set('equipos', $this->Equipo->Asignacion->find('all', array(
+            'conditions'=>array(
+                'Asignacion.laboratorio_id'=>$laboratorio
+            ),
+            'order' => array('Equipo.nombre_equipo ASC')
+            )));
+        $this->set('estados',$this->Equipo->Estado->find('list'));
     }
 
     /**

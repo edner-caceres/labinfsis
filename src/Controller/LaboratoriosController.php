@@ -17,6 +17,7 @@ class LaboratoriosController extends AppController {
     public function index() {
         $this->layout = 'ajax';
         $this->Laboratorio->recursive = 0;
+        $this->Laboratorio->order = 'Laboratorio.nombre_laboratorio';
         $this->set('laboratorios', $this->Laboratorio->find('all'));
     }
 
@@ -103,6 +104,7 @@ class LaboratoriosController extends AppController {
      */
     public function adm_index() {
         $this->Laboratorio->recursive = 0;
+        $this->Laboratorio->order = 'Laboratorio.nombre_laboratorio';
         $this->set('laboratorios', $this->paginate());
     }
 

@@ -23,7 +23,29 @@ Ext.define('labinfsis.controller.Equipos', {
             },
             'equipos button[action=viewactive]':{
                 toggle: this.filterView
+            },
+            'equipos #lab-select-tb':{
+                change: function(combo, newValue, oldValue, eOpts){
+                    var store = Ext.data.StoreManager.lookup('Equipos');
+                    store.clearFilter();
+                    store.resumeEvents();
+                    store.load({
+                        params:{laboratorio: newValue}
+                    })
+                }
+            },
+            'equipos #items':{
+                itemcontextmenu: function(view, record, item, index, e,eOpts ){
+                    alert('menu contextual');
+                },
+                itemclick: function(view, record, item, index, e, eOpts){
+                    alert('mostrar qtip');
+                },
+                itemdblclick:function(view, record, item, index, e, eOpts){
+                    alert('mostrar dialogo de registrar');
+                }
             }
+                
         });
     },
     filterView: function( button, pressed, eOpts){

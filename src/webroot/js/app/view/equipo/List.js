@@ -71,6 +71,7 @@ Ext.define('labinfsis.view.equipo.List' ,{
                 height:5
             },{                    
                 xtype:'combo',
+                id:'lab-select-tb',
                 hideLabel: true,
                 store: Ext.data.StoreManager.lookup('Laboratorios'),
                 valueField: 'id',
