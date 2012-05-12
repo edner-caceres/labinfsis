@@ -7,7 +7,8 @@ Ext.define('labinfsis.controller.Equipos', {
     'Equipo'
     ],
     views: [
-    'equipo.List'
+    'equipo.List',
+    'equipo.Menu'
     ],
     requires:[
     'Ext.window.MessageBox',
@@ -36,10 +37,10 @@ Ext.define('labinfsis.controller.Equipos', {
             },
             'equipos #items':{
                 itemcontextmenu: function(view, record, item, index, e,eOpts ){
-                    alert('menu contextual');
-                },
-                itemclick: function(view, record, item, index, e, eOpts){
-                    alert('mostrar qtip');
+                    var menu = Ext.widget('menuequipos');
+                    e.stopEvent();
+                    menu.showAt(e.getXY());
+                    return false;
                 },
                 itemdblclick:function(view, record, item, index, e, eOpts){
                     alert('mostrar dialogo de registrar');
