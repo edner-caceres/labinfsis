@@ -12,11 +12,12 @@ Ext.define('labinfsis.view.equipo.List' ,{
             store: Ext.data.StoreManager.lookup('Equipos'),
             tpl  : Ext.create('Ext.XTemplate',
                 '<tpl for=".">',
-                '<div class="item">',
-                (!Ext.isIE6? '<img width="64" height="64" src="/img/computer-64x64.png" />' :
-                    '<div style="width:74px;height:74px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'img/computer-64x64.png\',sizingMethod=\'scale\')"></div>'),
-                '<strong>{nombre_equipo}</strong>',
-                '<strong>{nombre_estado}</strong>',
+                    '<div class="item">',
+                        (!Ext.isIE6? '<img width="64" height="64" src="/img/computer-64x64.png" />' :
+                        '<div style="width:74px;height:74px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'img/computer-64x64.png\',sizingMethod=\'scale\')"></div>'),
+                        '<strong>{nombre_equipo}</strong>',
+                        '<strong>{nombre_estado}</strong>',
+                        '<span>{disponible}</span>',
                 '</div>',
                 '</tpl>'
                 ),

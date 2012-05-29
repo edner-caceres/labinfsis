@@ -3,6 +3,7 @@
 $datos = array();
 foreach ($equipos as $equipo) {
     $equipo['Equipo']['nombre_estado'] = $estados[$equipo['Equipo']['estado_id']];
+    $equipo['Equipo']['disponible'] = true;
     array_push($datos,$equipo['Equipo']);
 }
 $respuesta = array(

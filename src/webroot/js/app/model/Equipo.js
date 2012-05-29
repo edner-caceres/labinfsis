@@ -10,6 +10,11 @@ Ext.define('labinfsis.model.Equipo', {
     'nia',
     'codigo',
     'nombre_equipo',
-    'descripcion_equipo'
+    'descripcion_equipo',
+    {
+        name:'disponible',
+        type:'bool',
+        mapping: 'disponible'
+    }
     ]
 });

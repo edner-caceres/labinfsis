@@ -28,9 +28,9 @@ Ext.application({
                 title: 'Reservas Pendientes',
                 collapsible: true,
                 region:'east',
-                html:'Lista de reservas pendiendes ',
                 width:400,
-                margins: '0 0 5 5'
+                margins: '0 0 5 5',
+                contentEl: 'log'
 
             }]
         });
