@@ -16,8 +16,8 @@ Ext.define('labinfsis.controller.Equipos', {
     ],
     itemSelect:0,
     filterActive:{
-        view: '',
-        available:''
+        view: 1,
+        available:true
     }, 
     init: function() {
         this.control({
@@ -71,31 +71,32 @@ Ext.define('labinfsis.controller.Equipos', {
                 }
             }                
         });
+        //this.applyFilter();
     },
     filterView: function( button, pressed, eOpts){
 
         var nameFilter = button.getId();
-        if(pressed){
-            if(nameFilter =='active'){
-                this.filterActive.view = 1; 
-            }else if(nameFilter =='outservice'){
-                this.filterActive.view = 2; 
-            }
-        }
-        
-        
+        if(pressed && nameFilter =='active'){            
+            this.filterActive.view = 1; 
+        }else if( pressed && nameFilter =='outservice'){
+            $()
+            this.filterActive.view = 2; 
+        }else{
+            this.filterActive.view = 0;
+        }        
         this.applyFilter();
     },
     filterAvailable: function( button, pressed, eOpts){
         
         var nameFilter = button.getId();
-        if(pressed){
-            if(nameFilter =='filterfree'){
-                this.filterActive.available = true; 
-            }else if(nameFilter =='filterused'){
-                this.filterActive.available = false; 
-            }
+        if(pressed && nameFilter =='filterfree'){            
+            this.filterActive.available = true; 
+        }else if(pressed && nameFilter =='filterused'){
+            this.filterActive.available = false; 
+        }else{
+            this.filterActive.available = null; 
         }
+       
         this.applyFilter();        
         
     },
@@ -105,10 +106,17 @@ Ext.define('labinfsis.controller.Equipos', {
         store.resumeEvents();
         store.filter([{
             fn: function(record) {
-                return record.get('estado_id') == this.filterActive.view && record.get('disponible') == this.filterActive.available;
-            }
-        }]); 
-        
+                if(this.filterActive.available == null){
+                    return record.get('estado_id') == this.filterActive.view
+                }else if(this.filterActive.view == 0){
+                    return record.get('disponible') == this.filterActive.available;
+                }else{
+                    return record.get('estado_id') == this.filterActive.view && record.get('disponible') == this.filterActive.available;
+                }
+                
+            },
+            scope: this
+        }]);       
         
         store.sort('nombre_equipo', 'ASC');
     },
