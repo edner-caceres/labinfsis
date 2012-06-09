@@ -119,25 +119,22 @@ Ext.define('labinfsis.view.equipo.List' ,{
                 title:'Disponibilidad',
                 defaults:{
                     enableToggle: true,
-                    scale:'large'
+                    scale:'large',
+                    pressed: true
                 },
                 items:[{
-                    text: 'Todos',
-                    toggleGroup: 'filter',
-                    action: 'filterall',
-                    iconCls: 'icon-computer-all-32x32',
-                    pressed: true
-                },{
-                    toggleGroup: 'filter',
                     text: 'Disponibles',
                     iconCls: 'icon-computer-free-32x32',
-                    action: 'filterfree'
+                    action: 'filterfree',
+                    id:'filterfree'
+                    
                     
                 },{
                     toggleGroup: 'filter',
                     text: 'En uso',
                     iconCls: 'icon-computer-busy-32x32',
-                    action:'filterused'
+                    action:'filterused',
+                    id:'filterused'
                 }]
             }]
         }]

@@ -1,23 +1,24 @@
 Ext.define('labinfsis.controller.Equipos', {
     extend: 'Ext.app.Controller',
     stores: [
-    'Equipos'
+        'Equipos'
     ],
     models: [
-    'Equipo'
+        'Equipo'
     ],
     views: [
-    'equipo.List',
-    'equipo.Menu'
+        'equipo.List',
+        'equipo.Menu'
     ],
     requires:[
-    'Ext.window.MessageBox',
-    'Ext.tip.*'
+        'Ext.window.MessageBox',
+        'Ext.tip.*'
     ],
     itemSelect:0,
     filterActive:{
         view: 1,
-        available:true
+        available:true,
+        used: false
     }, 
     init: function() {
         this.control({
@@ -50,6 +51,7 @@ Ext.define('labinfsis.controller.Equipos', {
                         }
                     });
                     this.itemSelect = 0;
+                    this.applyFilter();
                 }
             },
             'equipos #items':{
@@ -71,7 +73,7 @@ Ext.define('labinfsis.controller.Equipos', {
                 }
             }                
         });
-        //this.applyFilter();
+        this.applyFilter();
     },
     filterView: function( button, pressed, eOpts){
 
@@ -79,44 +81,45 @@ Ext.define('labinfsis.controller.Equipos', {
         if(pressed && nameFilter =='active'){            
             this.filterActive.view = 1; 
         }else if( pressed && nameFilter =='outservice'){
-            $()
-            this.filterActive.view = 2; 
-        }else{
+            this.filterActive.view = 2;
+        }else if(pressed){
             this.filterActive.view = 0;
-        }        
-        this.applyFilter();
+        }
+        if(pressed) this.applyFilter();
     },
     filterAvailable: function( button, pressed, eOpts){
         
         var nameFilter = button.getId();
-        if(pressed && nameFilter =='filterfree'){            
-            this.filterActive.available = true; 
-        }else if(pressed && nameFilter =='filterused'){
-            this.filterActive.available = false; 
+        
+        if(pressed){
+            if(nameFilter =='filterfree'){            
+                this.filterActive.available = true; 
+            }else if(nameFilter =='filterused'){
+                this.filterActive.available = true; 
+            }
         }else{
-            this.filterActive.available = null; 
-        }
-       
-        this.applyFilter();        
+            if(nameFilter =='filterfree'){            
+                this.filterActive.available = false; 
+            }else if(nameFilter =='filterused'){
+                this.filterActive.available = false; 
+            }
+        }       
+        if(pressed) this.applyFilter();
         
     },
     applyFilter: function(){
         var store = Ext.data.StoreManager.lookup('Equipos');
+        //TODO: the suspend/resume hack can be removed once Filtering has been updated
+        store.suspendEvents();
         store.clearFilter();
         store.resumeEvents();
-        store.filter([{
-            fn: function(record) {
-                if(this.filterActive.available == null){
-                    return record.get('estado_id') == this.filterActive.view
-                }else if(this.filterActive.view == 0){
-                    return record.get('disponible') == this.filterActive.available;
-                }else{
-                    return record.get('estado_id') == this.filterActive.view && record.get('disponible') == this.filterActive.available;
-                }
-                
-            },
-            scope: this
-        }]);       
+        
+        if(this.filterActive.view != 0){
+            store.filter('estado_id',this.filterActive.view);
+        }
+        if(this.filterActive.available != null){
+            store.filter('disponible', this.filterActive.available);
+        } 
         
         store.sort('nombre_equipo', 'ASC');
     },
