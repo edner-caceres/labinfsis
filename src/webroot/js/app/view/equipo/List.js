@@ -117,6 +117,7 @@ Ext.define('labinfsis.view.equipo.List' ,{
             },{
                 xtype: 'buttongroup',
                 title:'Disponibilidad',
+                id:'filter-a',
                 defaults:{
                     enableToggle: true,
                     scale:'large',

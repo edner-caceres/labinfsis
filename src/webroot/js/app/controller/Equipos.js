@@ -1,24 +1,24 @@
 Ext.define('labinfsis.controller.Equipos', {
     extend: 'Ext.app.Controller',
     stores: [
-        'Equipos'
+    'Equipos'
     ],
     models: [
-        'Equipo'
+    'Equipo'
     ],
     views: [
-        'equipo.List',
-        'equipo.Menu'
+    'equipo.List',
+    'equipo.Menu'
     ],
     requires:[
-        'Ext.window.MessageBox',
-        'Ext.tip.*'
+    'Ext.window.MessageBox',
+    'Ext.tip.*'
     ],
     itemSelect:0,
     filterActive:{
         view: 1,
         available:true,
-        used: false
+        used: true
     }, 
     init: function() {
         this.control({
@@ -78,11 +78,17 @@ Ext.define('labinfsis.controller.Equipos', {
     filterView: function( button, pressed, eOpts){
 
         var nameFilter = button.getId();
-        if(pressed && nameFilter =='active'){            
+        var equipos = button.up('equipos');
+        var toolbar = equipos.down('#filter-a')
+        
+        if(pressed && nameFilter =='active'){
+            toolbar.enable(false);            
             this.filterActive.view = 1; 
         }else if( pressed && nameFilter =='outservice'){
             this.filterActive.view = 2;
-        }else if(pressed){
+            toolbar.disable(true);
+        }else if(pressed && nameFilter =='all'){
+            toolbar.enable(false);
             this.filterActive.view = 0;
         }
         if(pressed) this.applyFilter();
@@ -95,16 +101,16 @@ Ext.define('labinfsis.controller.Equipos', {
             if(nameFilter =='filterfree'){            
                 this.filterActive.available = true; 
             }else if(nameFilter =='filterused'){
-                this.filterActive.available = true; 
+                this.filterActive.used = true; 
             }
         }else{
             if(nameFilter =='filterfree'){            
                 this.filterActive.available = false; 
             }else if(nameFilter =='filterused'){
-                this.filterActive.available = false; 
+                this.filterActive.used = false; 
             }
         }       
-        if(pressed) this.applyFilter();
+        this.applyFilter();
         
     },
     applyFilter: function(){
@@ -114,12 +120,26 @@ Ext.define('labinfsis.controller.Equipos', {
         store.clearFilter();
         store.resumeEvents();
         
-        if(this.filterActive.view != 0){
-            store.filter('estado_id',this.filterActive.view);
-        }
-        if(this.filterActive.available != null){
-            store.filter('disponible', this.filterActive.available);
-        } 
+        store.filter([{
+            fn: function(record) {
+                var res = true;
+                if(this.filterActive.view != 0){
+                    res = res && record.get('estado_id') == this.filterActive.view;
+                }
+                if(this.filterActive.view != 2){
+                    if(!(this.filterActive.available && this.filterActive.used)){
+                        if(this.filterActive.available){
+                            res = res && record.get('disponible') == true;
+                        }else if(this.filterActive.used){
+                            res = res && record.get('disponible') == false;
+                        }
+                    }
+                }
+                return res;
+            },
+            scope: this
+        }]);
+        
         
         store.sort('nombre_equipo', 'ASC');
     },
