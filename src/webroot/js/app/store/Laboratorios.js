@@ -7,9 +7,9 @@ Ext.define('labinfsis.store.Laboratorios', {
         method:'POST',
         api: {
             read: 'laboratorios',
-            update: 'laboratorios/edit',
-            create: 'laboratorios/add',
-            destroy: 'laboratorios/delete'
+            update: 'adm/laboratorios/edit',
+            create: 'adm/laboratorios/add',
+            destroy: 'adm/laboratorios/delete'
         },
         reader: {
             type: 'json',
