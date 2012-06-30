@@ -129,7 +129,8 @@ class RegistrosController extends AppController {
      */
     public function adm_index() {
         $this->Registro->recursive = 0;
-        $this->set('registros', $this->paginate());
+        $this->layout = 'ajax';
+        $this->set('registros', $this->Registro->find('all'));
     }
 
     /**

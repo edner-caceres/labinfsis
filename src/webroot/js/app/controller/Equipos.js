@@ -144,7 +144,7 @@ Ext.define('labinfsis.controller.Equipos', {
         store.sort('nombre_equipo', 'ASC');
     },
     registrar: function(){
-        alert('seleccionado :' + this.itemSelect);
+        Ext.widget('registroadd');
     }
 
 });

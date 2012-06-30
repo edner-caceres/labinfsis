@@ -13,7 +13,8 @@ Ext.application({
     appFolder: 'js/app',
     controllers: [
         'Equipos',
-        'Laboratorios'
+        'Laboratorios',
+        'Registros'
     ],
     
     launch: function() {

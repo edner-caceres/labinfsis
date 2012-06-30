@@ -40,7 +40,7 @@ Ext.define('labinfsis.view.laboratorio.List' ,{
                     metaData.style = 'white-space:normal';
                     return value;
                 },
-                width: 380
+                width: 260
             }],
             selModel: sm,
             bbar:Ext.create('Ext.PagingToolbar', {
