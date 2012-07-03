@@ -161,3 +161,74 @@
 2012-05-11 22:30:05 Error: [MissingControllerException] Controller class JsController could not be found.
 #0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-06-30 14:35:02 Error: [MissingConnectionException] Database connection "SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 5432?" is missing, or could not be created.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(244): Postgres->connect()
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3419): ConnectionManager::getDataSource('default')
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(1083): Model->setDataSource('default')
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3445): Model->setSource('equipos')
+#5 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2700): Model->getDataSource()
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#7 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#8 L:\edcalo\proyectos\labinfsis\src\Controller\EquiposController.php(20): Controller->paginate()
+#9 [internal function]: EquiposController->index()
+#10 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(EquiposController), Array)
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#13 L:\edcalo\proyectos\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-01 00:06:25 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 L:\edcalo\proyectos\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-01 00:07:29 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 L:\edcalo\proyectos\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-01 00:08:35 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 L:\edcalo\proyectos\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-01 00:08:52 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 L:\edcalo\proyectos\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-02 15:06:55 Error: [MissingConnectionException] Database connection "SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 5432?" is missing, or could not be created.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(244): Postgres->connect()
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3419): ConnectionManager::getDataSource('default')
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(1083): Model->setDataSource('default')
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3445): Model->setSource('equipos')
+#5 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2700): Model->getDataSource()
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#7 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#8 L:\edcalo\proyectos\labinfsis\src\Controller\EquiposController.php(20): Controller->paginate()
+#9 [internal function]: EquiposController->index()
+#10 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(EquiposController), Array)
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#13 L:\edcalo\proyectos\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-02 15:24:09 Error: [MissingConnectionException] Database connection "SQLSTATE[08006] [7] could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" and accepting
+	TCP/IP connections on port 5432?" is missing, or could not be created.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(244): Postgres->connect()
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3419): ConnectionManager::getDataSource('default')
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(1083): Model->setDataSource('default')
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3445): Model->setSource('equipos')
+#5 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2700): Model->getDataSource()
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#7 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#8 L:\edcalo\proyectos\labinfsis\src\Controller\EquiposController.php(20): Controller->paginate()
+#9 [internal function]: EquiposController->index()
+#10 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(EquiposController), Array)
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#13 L:\edcalo\proyectos\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-07-02 21:47:37 Error: [MissingActionException] Action EquiposController::webroot() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#2 L:\edcalo\proyectos\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

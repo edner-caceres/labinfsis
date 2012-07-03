@@ -25,14 +25,36 @@ Ext.define('labinfsis.view.laboratorio.Add', {
                 name:'id',
                 xtype: 'hidden'
             },{
-                name : 'nombre_laboratorio',
-                fieldLabel: 'Nombre del Laboratorio',               
-                anchor:'50%'
-            },{
-                
-                name : 'numero_de_equipos',
-                fieldLabel: 'Numero de Equipos',                
-                anchor:'40%'
+                xtype:'container',
+                layout: 'column',
+                style:{
+                    paddingBottom:'20px'
+                },
+                items:[{
+                    xtype:'container',
+                    columnWidth:.75,
+                    layout:'form',
+                    items:[{
+                        xtype:'textfield',
+                        name:'nombre_laboratorio',
+                        fieldLabel:'Nombre del Laboratorio',
+                        allowBlank:false,
+                        msgTarget:'side',
+                        anchor:'90%'
+                    }]
+                },{
+                    xtype:'container',
+                    columnWidth:.25,
+                    layout:'form',
+                    items:[{
+                        xtype:'numberfield',
+                        name:'numero_de_equipos',
+                        fieldLabel:'Numero de Equipos',
+                        msgTarget:'side',
+                        allowBlank:false,
+                        anchor:'90%'
+                    }]
+                }]                
             },{
                 anchor: '100%',
                 xtype: 'htmleditor',                

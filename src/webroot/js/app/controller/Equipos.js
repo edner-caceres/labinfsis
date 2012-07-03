@@ -43,15 +43,22 @@ Ext.define('labinfsis.controller.Equipos', {
             'equipos #lab-select-tb':{
                 change: function(combo, newValue, oldValue, eOpts){
                     var store = Ext.data.StoreManager.lookup('Equipos');
+                    store.suspendEvents();
                     store.clearFilter();
                     store.resumeEvents();
                     store.load({
                         params:{
                             laboratorio: newValue
-                        }
+                        },
+                        callback: function(records, operation, success){
+                            if(success){
+                                this.itemSelect = 0;
+                                this.applyFilter();
+                            }
+                        },
+                        scope: this
                     });
-                    this.itemSelect = 0;
-                    this.applyFilter();
+                    
                 }
             },
             'equipos #items':{

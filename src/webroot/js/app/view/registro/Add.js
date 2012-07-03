@@ -5,7 +5,7 @@ Ext.define('labinfsis.view.registro.Add', {
     layout: 'fit',
     autoShow: true,
     modal:true,
-    width: 550,
+    width: 450,
     iconCls: 'icon-add-16x16',
     initComponent: function() {
         this.items = [{
@@ -25,21 +25,70 @@ Ext.define('labinfsis.view.registro.Add', {
                 name:'id',
                 xtype: 'hidden'
             },{
-                name : 'nombre_laboratorio',
-                fieldLabel: 'Nombre del Laboratorio',               
-                anchor:'50%'
+                xtype:'container',
+                layout: 'column',
+                style:{
+                    paddingBottom:'20px',
+                    paddingRight:'20px'
+                },
+                items:[{
+                    xtype:'container',
+                    columnWidth:.65,
+                    layout:'form',
+                    items:[{
+                        xtype:'textfield',
+                        fieldLabel:'Auxiliar',
+                        msgTarget:'side',
+                        allowBlank:false,
+                        anchor:'90%'
+                    }]
+                },{
+                    xtype:'container',
+                    columnWidth:.35,
+                    layout:'form',
+                    items:[{
+                        xtype:'textfield',
+                        name:'nombres',
+                        fieldLabel:'Equipo',
+                        msgTarget:'side',
+                        allowBlank:false,
+                        anchor:'90%'
+                    }]
+                }]                
             },{
-                
-                name : 'numero_de_equipos',
-                fieldLabel: 'Numero de Equipos',                
-                anchor:'40%'
+                fieldLabel: 'Estudiante'
             },{
-                anchor: '100%',
-                xtype: 'htmleditor',                
-                name : 'descripcion_laboratorio',
-                fieldLabel: 'Descripcion',
-                allowBlank: true,
-                height: 200
+                fieldLabel: 'Curso'
+            },{
+                xtype:'container',
+                layout: 'column',
+                style:{
+                    paddingBottom:'20px'
+                },
+                items:[{
+                    xtype:'container',
+                    columnWidth:.50,
+                    layout:'form',
+                    items:[{
+                        xtype:'datefield',
+                        fieldLabel:'Entrada',
+                        msgTarget:'side',
+                        allowBlank:false,
+                        anchor:'90%'
+                    }]
+                },{
+                    xtype:'container',
+                    columnWidth:.50,
+                    layout:'form',
+                    items:[{
+                        xtype:'datefield',
+                        name:'nombres',
+                        fieldLabel:'Salida',
+                        msgTarget:'side',
+                        allowBlank:false,
+                        anchor:'90%'
+                    }]
+                }]                
             }]
         }];
 

@@ -9,6 +9,7 @@ Ext.define('labinfsis.controller.Laboratorios', {
     views: [
     'laboratorio.List',
     'laboratorio.Add',
+    'laboratorio.Selector'
     ],
     init: function() {
         this.control({
