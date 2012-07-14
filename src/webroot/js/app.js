@@ -23,7 +23,7 @@ Ext.application({
             layout: 'border',
             region:'center',
             items:[{             
-                xtype: 'equipos',
+                xtype: 'registros',
                 region:'center'
             },{
                 title: 'Reservas Pendientes',

@@ -7,148 +7,85 @@ Ext.define('labinfsis.controller.Equipos', {
     'Equipo'
     ],
     views: [
+    'equipo.Add',
+    'equipo.Menu',
     'equipo.List',
-    'equipo.Menu'
+    'equipo.View',
     ],
     requires:[
     'Ext.window.MessageBox',
     'Ext.tip.*'
     ],
-    itemSelect:0,
-    filterActive:{
-        view: 1,
-        available:true,
-        used: true
-    }, 
+    
     init: function() {
         this.control({
-            'equipos button[action=viewall]':{
-                toggle: this.filterView
+            'equipos button[action=addequipo]': {
+                click: this.addEquipo
             },
-            'equipos button[action=viewoutservice]':{
-                toggle:this.filterView
+            'equipos button[action=editequipo]': {
+                click: this.editEquipo
             },
-            'equipos button[action=viewactive]':{
-                toggle: this.filterView
+            'equipos #listequipos': {
+                itemdblclick: this.editEquipo
             },
-            'equipos button[action=filterfree]':{
-                toggle: this.filterAvailable
+            'equipos button[action=deleteequipo]': {
+                click: this.deleteEquipo
             },
-            'equipos button[action=filterall]':{
-                toggle:this.filterAvailable
-            },
-            'equipos button[action=filterused]':{
-                toggle: this.filterAvailable
-            },
-            'equipos #lab-select-tb':{
-                change: function(combo, newValue, oldValue, eOpts){
-                    var store = Ext.data.StoreManager.lookup('Equipos');
-                    store.suspendEvents();
-                    store.clearFilter();
-                    store.resumeEvents();
-                    store.load({
-                        params:{
-                            laboratorio: newValue
-                        },
-                        callback: function(records, operation, success){
-                            if(success){
-                                this.itemSelect = 0;
-                                this.applyFilter();
-                            }
-                        },
-                        scope: this
-                    });
-                    
-                }
-            },
-            'equipos #items':{
-                itemcontextmenu: function(view, record, item, index, e,eOpts ){
-                    var menu = Ext.widget('menuequipos');
-                    e.stopEvent();
-                    menu.showAt(e.getXY());
-                    this.itemSelect = record.get('id');
-                    return false;
-                },
-                itemdblclick:function(view, record, item, index, e, eOpts){
-                    this.itemSelect = record.get('id');
-                    this.registrar();
-                }
-            },
-            'menuequipos #asignar':{
-                click: function(button, e){
-                    this.registrar()
-                }
-            }                
+            'equipos button[action=save]': {
+                click: this.saveEquipo
+            }            
         });
-        this.applyFilter();
+        
     },
-    filterView: function( button, pressed, eOpts){
+    addEquipo: function(button){
+        Ext.widget('equipoadd');
 
-        var nameFilter = button.getId();
-        var equipos = button.up('equipos');
-        var toolbar = equipos.down('#filter-a')
-        
-        if(pressed && nameFilter =='active'){
-            toolbar.enable(false);            
-            this.filterActive.view = 1; 
-        }else if( pressed && nameFilter =='outservice'){
-            this.filterActive.view = 2;
-            toolbar.disable(true);
-        }else if(pressed && nameFilter =='all'){
-            toolbar.enable(false);
-            this.filterActive.view = 0;
+    },
+    viewEquipo:function(a, b, c){
+        console.log('Ver detalle del equipo');
+    },
+    editEquipo: function(source, record){
+        if(source.getXType() == 'button'){
+            var win = source.up('window');
+            record = win.down('#listaequipos').getSelectionModel().getSelection();
+            record = record[0];
         }
-        if(pressed) this.applyFilter();
+        var view = Ext.widget('equipoadd');
+        view.down('form').loadRecord(record);
+
     },
-    filterAvailable: function( button, pressed, eOpts){
-        
-        var nameFilter = button.getId();
-        
-        if(pressed){
-            if(nameFilter =='filterfree'){            
-                this.filterActive.available = true; 
-            }else if(nameFilter =='filterused'){
-                this.filterActive.used = true; 
-            }
-        }else{
-            if(nameFilter =='filterfree'){            
-                this.filterActive.available = false; 
-            }else if(nameFilter =='filterused'){
-                this.filterActive.used = false; 
-            }
-        }       
-        this.applyFilter();
-        
-    },
-    applyFilter: function(){
-        var store = Ext.data.StoreManager.lookup('Equipos');
-        //TODO: the suspend/resume hack can be removed once Filtering has been updated
-        store.suspendEvents();
-        store.clearFilter();
-        store.resumeEvents();
-        
-        store.filter([{
-            fn: function(record) {
-                var res = true;
-                if(this.filterActive.view != 0){
-                    res = res && record.get('estado_id') == this.filterActive.view;
+    deleteEquipo: function(button){
+        Ext.MessageBox.confirm(
+            'Eliminar Equipo',
+            'Esta seguro que desea eliminar los equipos seleccionados',
+            function(confirm){
+                if(confirm == 'yes'){
+                    var win = button.up('window');
+                    var seleccion = win.down('#listaequipos').getSelectionModel().getSelection();
+                    this.getEquipossStore().remove(seleccion);
+                    this.getEquiposStore().sync();
                 }
-                if(this.filterActive.view != 2){
-                    if(!(this.filterActive.available && this.filterActive.used)){
-                        if(this.filterActive.available){
-                            res = res && record.get('disponible') == true;
-                        }else if(this.filterActive.used){
-                            res = res && record.get('disponible') == false;
-                        }
-                    }
-                }
-                return res;
             },
-            scope: this
-        }]);
+            this
+            );
+    },
+    saveEquipo: function(button){
+        var win    = button.up('window');
+        var form   = win.down('form');
+        var record = form.getRecord();
+        var values = form.getValues();
+        if(form.getForm().isValid()){
+            if(!record){
+                record = this.getEquiposModel().create();
+                record.set(values);
+                this.getEquiposStore().insert(0, record);
+            }else{
+                record.set(values);
+            }
         
-        
-        store.sort('nombre_equipo', 'ASC');
+            win.close();
+            this.getEquiposStore().sync();
+        }
     },
     registrar: function(){
         Ext.widget('registroadd');
