@@ -3,7 +3,7 @@ Ext.define('labinfsis.view.equipo.List' ,{
     alias : 'widget.equipos',
     layout: 'border',
     autoShow: true,
-    width: 550,
+    width: 650,
     height: 415,
     title: 'Lista de equipos registrados',
     initComponent: function() {        
@@ -21,33 +21,21 @@ Ext.define('labinfsis.view.equipo.List' ,{
             border: false,
             store: 'Equipos',
             columns : [{
-                header: 'NIA',
-                dataIndex: 'nia',
+                header: 'Nombre',
+                dataIndex: 'nombre_equipo',
                 renderer:function(value, metaData){
                     metaData.style = 'font-size:120%; font-weight: bold';
                     return value;
                 },
-                width:50     
+                width:100
+            },{
+                header: 'NIA',
+                dataIndex: 'nia',
+                width:150     
             }, {
                 header: 'Codigo Interno',
                 dataIndex: 'codigo',
-                renderer:function(value, metaData){
-                    metaData.style = 'font-size:120%; font-weight: bold';
-                    return value;
-                },
                 width:100
-            },{
-                header: 'Nombre',
-                dataIndex: 'nombre_equipo',
-                width:100
-            },{
-                header: 'Descripcion',
-                dataIndex: 'descripcion_equipo',
-                renderer:function(value, metaData){
-                    metaData.style = 'white-space:normal';
-                    return value;
-                },
-                width: 260
             }],
             selModel: sm,
             bbar:Ext.create('Ext.PagingToolbar', {
@@ -58,7 +46,8 @@ Ext.define('labinfsis.view.equipo.List' ,{
             })
         },{
             xtype:'equipoview',
-            region:'west'
+            width: 240,
+            region:'east'
         }];
         
         this.tbar =[{
@@ -104,6 +93,8 @@ Ext.define('labinfsis.view.equipo.List' ,{
             }else{
                 bedit.disable();
             }
+            var view = this.down('equipoview');
+            view.updateInfo(selected[0]);
         }else{
             bedit.disable();
             bdelete.disable();

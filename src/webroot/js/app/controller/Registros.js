@@ -131,7 +131,7 @@ Ext.define('labinfsis.controller.Registros', {
     filterView: function( button, pressed, eOpts){
 
         var nameFilter = button.getId();
-        var equipos = button.up('equipos');
+        var equipos = button.up('registros');
         var toolbar = equipos.down('#filter-a')
         
         if(pressed && nameFilter =='active'){
@@ -191,8 +191,7 @@ Ext.define('labinfsis.controller.Registros', {
                 return res;
             },
             scope: this
-        }]);
-        
+        }]);        
         
         store.sort('nombre_equipo', 'ASC');
     },

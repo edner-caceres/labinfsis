@@ -25,7 +25,7 @@ Ext.define('labinfsis.controller.Equipos', {
             'equipos button[action=editequipo]': {
                 click: this.editEquipo
             },
-            'equipos #listequipos': {
+            'equipos #listaequipos': {
                 itemdblclick: this.editEquipo
             },
             'equipos button[action=deleteequipo]': {
@@ -41,8 +41,8 @@ Ext.define('labinfsis.controller.Equipos', {
         Ext.widget('equipoadd');
 
     },
-    viewEquipo:function(a, b, c){
-        console.log('Ver detalle del equipo');
+    viewEquipo:function(rowmodel, record, index, eOpts){
+        alert('Ver detalle del equipo');
     },
     editEquipo: function(source, record){
         if(source.getXType() == 'button'){

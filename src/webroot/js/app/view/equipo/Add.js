@@ -15,49 +15,46 @@ Ext.define('labinfsis.view.equipo.Add', {
             defaults:{
                 xtype: 'textfield',
                 msgTarget: 'side',
+                anchor: '100%',
+                layout: {
+                    type: 'hbox',
+                    defaultMargins: {
+                        top: 0, 
+                        right: 5, 
+                        bottom: 0, 
+                        left: 0
+                    }
+                },
                 allowBlank: false
             },
             fieldDefaults: {
-                labelAlign: 'top'
-                
+                labelAlign: 'top'                
             },
             items: [{
                 name:'id',
                 xtype: 'hidden'
             },{
-                xtype:'container',
-                layout: 'column',
-                style:{
-                    paddingBottom:'20px',
-                    paddingRight:'20px'
-                },
-                items:[{
-                    xtype:'container',
-                    columnWidth:.65,
-                    layout:'form',
-                    items:[{
-                        xtype:'textfield',
-                        fieldLabel:'NIA',
-                        name : 'nia',
-                        msgTarget:'side',
-                        allowBlank:false,
-                        anchor:'90%'
-                    }]
-                },{
-                    xtype:'container',
-                    columnWidth:.35,
-                    layout:'form',
-                    items:[{
-                        xtype:'textfield',
-                        name:'codigo',
-                        fieldLabel:'Codigo Interno',
-                        msgTarget:'side',
-                        allowBlank:false,
-                        anchor:'90%'
-                    }]
-                }]                
+                fieldLabel: 'Nombre del Equipo',
+                name:'nombre_equipo'
             },{
-                fieldLabel: 'Estudiante'
+                xtype:'fieldcontainer',
+                defaults:{
+                    xtype:'textfield',
+                    msgTarget:'side',
+                    allowBlank:false,
+                    flex: 1
+                },
+                fieldDefaults: {
+                    labelAlign: 'top'                
+                },
+                items:[{                    
+                    fieldLabel:'NIA',
+                    name : 'nia'
+                    
+                },{
+                    name:'codigo',
+                    fieldLabel:'Codigo Interno'
+                }]                
             },{
                 xtype:'panel',
                 title: 'Componentes',

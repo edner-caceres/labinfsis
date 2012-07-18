@@ -18,8 +18,7 @@ Ext.define('labinfsis.view.laboratorio.Add', {
                 allowBlank: false
             },
             fieldDefaults: {
-                labelAlign: 'top'
-                
+                labelAlign: 'top'                
             },
             items: [{
                 name:'id',
