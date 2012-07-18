@@ -1,8 +1,7 @@
 Ext.define('labinfsis.view.equipo.View', {
     extend: 'Ext.panel.Panel',
     alias : 'widget.equipoview',
-    layout: 'fit',
-    
+    title:'Detalle del equipo',
     initComponent: function() {
         this.tpl= [
         '<div class="details">',
@@ -16,21 +15,23 @@ Ext.define('labinfsis.view.equipo.View', {
                     '<span>{nia}</span></p>',
                     '<p><b>Codigo:</b>',
                     '<span>{codigo}</span></p>',
+                    '<p><b>Estado:</b>',
+                    '<span>{nombre_estado}</span></p>',
                     '<p><b>Descripcion:</b>',
                     '<span>{descripcion_equipo}</span></p>',
                 '</div>',
             '</tpl>',
         '</div>'
         ];
+        this.bodyStyle = "padding:10px";
+        this.html = 'Seleccione un equipo para ver el detalle';
     
         this.callParent(arguments);
     },
     
     updateInfo: function(record) {
-        this.body.hide();
+
         this.tpl.overwrite(this.body, record.data);
-        this.body.slideIn('l', {
-            duration: 250
-        });
+        this.body..highlight();
     }
 });

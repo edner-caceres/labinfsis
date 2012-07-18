@@ -3,8 +3,9 @@ Ext.define('labinfsis.view.equipo.List' ,{
     alias : 'widget.equipos',
     layout: 'border',
     autoShow: true,
-    width: 650,
-    height: 415,
+    modal:true,
+    width: 800,
+    height: 500,
     title: 'Lista de equipos registrados',
     initComponent: function() {        
         var sm = Ext.create('Ext.selection.CheckboxModel',{
@@ -36,17 +37,21 @@ Ext.define('labinfsis.view.equipo.List' ,{
                 header: 'Codigo Interno',
                 dataIndex: 'codigo',
                 width:100
+            },{
+                header: 'Estado',
+                dataIndex: 'nombre_estado',
+                width:100
             }],
             selModel: sm,
             bbar:Ext.create('Ext.PagingToolbar', {
                 store: Ext.data.StoreManager.lookup('Equipos'),
                 displayInfo: true,
-                displayMsg: 'Mostrando {0} - {1} Laboratorios de  {2}',
-                emptyMsg: "No hay Laboratorios registrados"
+                displayMsg: 'Mostrando {0} - {1} equipos de  {2}',
+                emptyMsg: "No hay Equipos registrados"
             })
         },{
             xtype:'equipoview',
-            width: 240,
+            width: 290,
             region:'east'
         }];
         
