@@ -1,0 +1,110 @@
+
+a {
+	color: #003d4c;
+
+}
+a:hover {
+	color: #367889;
+}
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+	margin-bottom:0.5em;
+}
+h1 {
+	background:#fff;
+	color: #003d4c;
+	font-size: 100%;
+}
+h2 {
+	background:#fff;
+	color: #e32;
+	font-size: 190%;
+}
+h3 {
+	color: #2c6877;
+	font-size: 165%;
+}
+h4 {
+	color: #993;
+	font-weight: normal;
+}
+ul, li {
+	margin: 0 12px;
+}
+p {
+	margin: 0 0 1em 0;
+}
+
+
+
+/** containers **/
+
+div.view {
+
+	padding:10px 2%;
+}
+
+
+/** Related **/
+.related {
+	clear: both;
+	display: block;
+}
+/** Tables **/
+.related table {
+	border-right:0;
+	clear: both;
+	color: #333;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.related th {
+	border:0;
+	background-color: #C5C5C5;
+        background-image: -moz-linear-gradient(center top , #F9F9F9, #E3E4E6);
+	text-align: left;
+	padding:4px;
+}
+.related th a {
+	display: block;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+
+.related table tr td {
+	padding: 6px;
+	text-align: left;
+	vertical-align: top;
+}
+.related table tr:nth-child(even) {
+	background: #f9f9f9;
+}
+
+/** Scaffold View **/
+dl {
+	line-height: 2em;
+	margin: 0em 0em;
+}
+dl dd:nth-child(4n+2),
+dl dt:nth-child(4n+1) {
+	background: #f4f4f4;
+}
+
+dt {
+	font-weight: bold;
+	padding-left: 4px;
+	vertical-align: top;
+	width: 10em;
+}
+dd {
+	margin-left: 10em;
+	margin-top: -2em;
+	vertical-align: top;
+}
+
+
+
+
+
+

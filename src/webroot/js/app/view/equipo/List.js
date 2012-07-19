@@ -4,8 +4,8 @@ Ext.define('labinfsis.view.equipo.List' ,{
     layout: 'border',
     autoShow: true,
     modal:true,
-    width: 800,
-    height: 500,
+    width: 900,
+    height: 600,
     title: 'Lista de equipos registrados',
     initComponent: function() {        
         var sm = Ext.create('Ext.selection.CheckboxModel',{
@@ -51,7 +51,7 @@ Ext.define('labinfsis.view.equipo.List' ,{
             })
         },{
             xtype:'equipoview',
-            width: 290,
+            width: 390,
             region:'east'
         }];
         

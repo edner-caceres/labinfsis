@@ -14,7 +14,8 @@ Ext.application({
     controllers: [
         'Equipos',
         'Laboratorios',
-        'Registros'
+        'Registros',
+        'Componentes'
     ],
     
     launch: function() {

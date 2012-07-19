@@ -2,8 +2,9 @@ Ext.define('labinfsis.view.equipo.View', {
     extend: 'Ext.panel.Panel',
     alias : 'widget.equipoview',
     title:'Detalle del equipo',
+    autoScroll: true,
     initComponent: function() {
-        this.tpl= [
+        /*this.tpl= [
         '<div class="details">',
             '<tpl for=".">',
                 (!Ext.isIE6? '<img src="icons/{thumb}" />' : 
@@ -22,7 +23,17 @@ Ext.define('labinfsis.view.equipo.View', {
                 '</div>',
             '</tpl>',
         '</div>'
-        ];
+        ];*/
+        this.tpl = [
+            '<div class="details">',
+            '<tpl for=".">',
+                '<div class="details-info">',
+                    '<p>Recuperando informacion del equipo: ',
+                    '<span><b>{nombre_equipo}</b></span></p>',
+                '</div>',
+            '</tpl>',
+        '</div>'
+    ]
         this.bodyStyle = "padding:10px";
         this.html = 'Seleccione un equipo para ver el detalle';
     
@@ -30,8 +41,10 @@ Ext.define('labinfsis.view.equipo.View', {
     },
     
     updateInfo: function(record) {
-
         this.tpl.overwrite(this.body, record.data);
-        this.body..highlight();
+        this.body.load({url:'/equipos/view/'+record.get('id')});
+        /*
+        this.tpl.overwrite(this.body, record.data);
+        this.body.highlight();*/
     }
 });

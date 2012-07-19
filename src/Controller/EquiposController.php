@@ -45,6 +45,7 @@ class EquiposController extends AppController {
      */
     public function view($id = null) {
         $this->Equipo->id = $id;
+        $this->layout = 'detail';
         if (!$this->Equipo->exists()) {
             throw new NotFoundException(__('Invalid equipo'));
         }

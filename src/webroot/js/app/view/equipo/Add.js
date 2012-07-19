@@ -5,7 +5,7 @@ Ext.define('labinfsis.view.equipo.Add', {
     layout: 'fit',
     autoShow: true,
     modal:true,
-    width: 450,
+    width: 600,
     iconCls: 'icon-add-16x16',
     initComponent: function() {
         this.items = [{
@@ -13,9 +13,6 @@ Ext.define('labinfsis.view.equipo.Add', {
             border:false,
             bodyStyle: 'padding:10px; background-color:#DFE9F6',
             defaults:{
-                xtype: 'textfield',
-                msgTarget: 'side',
-                anchor: '100%',
                 layout: {
                     type: 'hbox',
                     defaultMargins: {
@@ -24,8 +21,7 @@ Ext.define('labinfsis.view.equipo.Add', {
                         bottom: 0, 
                         left: 0
                     }
-                },
-                allowBlank: false
+                }
             },
             fieldDefaults: {
                 labelAlign: 'top'                
@@ -34,14 +30,36 @@ Ext.define('labinfsis.view.equipo.Add', {
                 name:'id',
                 xtype: 'hidden'
             },{
-                fieldLabel: 'Nombre del Equipo',
-                name:'nombre_equipo'
-            },{
-                xtype:'fieldcontainer',
+                xtype:'container',
+                style:{
+                    paddingBottom: '20px'
+                },
                 defaults:{
                     xtype:'textfield',
                     msgTarget:'side',
                     allowBlank:false,
+                    flex: 1
+                },
+                fieldDefaults: {
+                    labelAlign: 'top'
+                },
+                items:[{
+                    fieldLabel: 'Nombre del Equipo',
+                    name:'nombre_equipo'
+                },{
+                    name:'estado_id',
+                    fieldLabel:'Estado'
+                },{
+                    name:'estado_id',
+                    fieldLabel:'Tipo'
+                }]
+            },{
+                xtype:'container',
+                style:{
+                    paddingBottom: '20px'
+                },
+                defaults:{
+                    xtype:'textfield',
                     flex: 1
                 },
                 fieldDefaults: {
@@ -53,12 +71,19 @@ Ext.define('labinfsis.view.equipo.Add', {
                     
                 },{
                     name:'codigo',
-                    fieldLabel:'Codigo Interno'
+                    fieldLabel:'Numero de serie'
                 }]                
             },{
-                xtype:'panel',
-                title: 'Componentes',
-                html: 'Lista de partes internas y externas'                
+                anchor: '100%',
+                xtype: 'htmleditor',
+                name : 'descripcion_equipo',
+                enableSourceEdit:false,
+                fieldLabel: 'Descripcion',
+                allowBlank: true,
+                height: 100
+            },{
+                title:'Componentes',
+                xtype:'componentes'
             }]
         }];
 
