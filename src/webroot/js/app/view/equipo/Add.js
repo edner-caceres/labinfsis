@@ -5,7 +5,7 @@ Ext.define('labinfsis.view.equipo.Add', {
     layout: 'fit',
     autoShow: true,
     modal:true,
-    width: 600,
+    width: 530,
     iconCls: 'icon-add-16x16',
     initComponent: function() {
         this.items = [{
@@ -80,16 +80,17 @@ Ext.define('labinfsis.view.equipo.Add', {
                 enableSourceEdit:false,
                 fieldLabel: 'Descripcion',
                 allowBlank: true,
-                height: 100
-            },{
-                title:'Componentes',
-                xtype:'componentes'
+                height: 150
             }]
         }];
 
         this.buttons = [{
             text: 'Save',
             action: 'save',
+            iconCls:'icon-save-16x16'
+        },{
+            text: 'Save and add components',
+            action: 'add-components',
             iconCls:'icon-save-16x16'
         },{
             text: 'Cancel',

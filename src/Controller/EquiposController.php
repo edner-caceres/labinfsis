@@ -15,26 +15,16 @@ class EquiposController extends AppController {
      * @return void
      */
     public function index() {
-        $this->Equipo->recursive = 0;
-        $this->layout = 'ingreso';
-        $this->set('equipos', $this->paginate());
-    }
-    /**
-     * index method
-     *
-     * @return void
-     */
-    public function toList() {
         $this->Equipo->recursive = 2;
         $this->layout = 'ajax';
         $laboratorio = isset($this->request->query['laboratorio']) ? $this->request->query['laboratorio'] : 1;
         $this->set('equipos', $this->Equipo->Asignacion->find('all', array(
-            'conditions'=>array(
-                'Asignacion.laboratorio_id'=>$laboratorio
-            ),
-            'order' => array('Equipo.nombre_equipo ASC')
-            )));
-        $this->set('estados',$this->Equipo->Estado->find('list'));
+                    'conditions' => array(
+                        'Asignacion.laboratorio_id' => $laboratorio
+                    ),
+                    'order' => array('Equipo.nombre_equipo ASC')
+                )));
+        $this->set('estados', $this->Equipo->Estado->find('list'));
     }
 
     /**
@@ -149,16 +139,25 @@ class EquiposController extends AppController {
      */
     public function adm_add() {
         if ($this->request->is('post')) {
-            $this->Equipo->create();
-            if ($this->Equipo->save($this->request->data)) {
-                $this->Session->setFlash(__('The equipo has been saved'));
-                $this->redirect(array('action' => 'index'));
+            $estados = $this->Equipo->Estado->find('list');
+            $this->set(compact('estados'));
+            $this->layout = 'ajax';
+            if (!empty($this->data)) {
+                $datos = json_decode(stripslashes(is_array($this->data) ? $this->data[0] : $this->data)); //decodificamos la informacion
+                $this->data = array('Equipo' => (array) $datos);
+                $this->Equipo->create();
+                if ($this->Equipo->save($this->data)) {
+                    $this->set('guardado', 1);
+                    $this->set('newID', $this->Equipo->id);
+                } else {
+                    $this->set('guardado', 0);
+                }
             } else {
-                $this->Session->setFlash(__('The equipo could not be saved. Please, try again.'));
+                $this->set('guardado', 2); // mo se recibieron datos para guardar
             }
+        } else {
+            $this->set('guardado', 2);
         }
-        $estados = $this->Equipo->Estado->find('list');
-        $this->set(compact('estados'));
     }
 
     /**
@@ -193,19 +192,29 @@ class EquiposController extends AppController {
      * @return void
      */
     public function adm_delete($id = null) {
-        if (!$this->request->is('post')) {
-            throw new MethodNotAllowedException();
+        $this->layout = 'ajax';
+        $equipos = json_decode(stripslashes(is_array($this->data) ? $this->data[0] : $this->data));
+
+        if (count($equipos) == 1) {
+            $result = TRUE;
+            $this->Equipo->id = $equipos->id;
+            if (!$this->Equipo->exists()) {
+                $result = FALSE;
+            } else {
+                $result = $this->Equipo->delete();
+            }
+            $this->set('eliminado', $result);
+        } else {
+            $result = TRUE;
+            foreach ($equipos as $equipo) {
+                $this->Equipo->id = $equipo->id;
+                if (!$this->Equipo->exists()) {
+                    $result = ($result and FALSE);
+                }
+                $result = ($result and $this->Equipo->delete());
+            }
+            $this->set('eliminado', $result);
         }
-        $this->Equipo->id = $id;
-        if (!$this->Equipo->exists()) {
-            throw new NotFoundException(__('Invalid equipo'));
-        }
-        if ($this->Equipo->delete()) {
-            $this->Session->setFlash(__('Equipo deleted'));
-            $this->redirect(array('action' => 'index'));
-        }
-        $this->Session->setFlash(__('Equipo was not deleted'));
-        $this->redirect(array('action' => 'index'));
     }
 
 }

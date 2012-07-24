@@ -33,6 +33,9 @@ Ext.define('labinfsis.controller.Equipos', {
             },
             'equipos button[action=save]': {
                 click: this.saveEquipo
+            },
+            'equipoadd button[action=save]': {
+                click: this.saveEquipo
             }            
         });
         
@@ -62,7 +65,7 @@ Ext.define('labinfsis.controller.Equipos', {
                 if(confirm == 'yes'){
                     var win = button.up('window');
                     var seleccion = win.down('#listaequipos').getSelectionModel().getSelection();
-                    this.getEquipossStore().remove(seleccion);
+                    this.getEquiposStore().remove(seleccion);
                     this.getEquiposStore().sync();
                 }
             },

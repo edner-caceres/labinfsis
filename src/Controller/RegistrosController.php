@@ -16,6 +16,7 @@ class RegistrosController extends AppController {
      */
     public function index() {
         $this->Registro->recursive = 0;
+        $this->layout = 'ingreso';
         $this->set('registros', $this->paginate());
     }
 

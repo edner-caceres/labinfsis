@@ -47,7 +47,7 @@
 
         </div>
         <div class="related">
-            <h3><?php echo __('Asignaciones'); ?></h3>
+            <h3><?php echo __('Ubicacion'); ?></h3>
 
             <table cellpadding = "0" cellspacing = "0">
                 <tr>

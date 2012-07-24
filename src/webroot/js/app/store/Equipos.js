@@ -6,10 +6,10 @@ Ext.define('labinfsis.store.Equipos', {
         type: 'ajax',
         method:'POST',
         api: {
-            read: 'equipos/tolist',
-            update: 'equipos/edit',
-            create: 'equipos/add',
-            destroy: 'equipos/delete'
+            read: 'equipos/',
+            update: 'adm/equipos/edit',
+            create: 'adm/equipos/add',
+            destroy: 'adm/equipos/delete'
         },
         reader: {
             type: 'json',
