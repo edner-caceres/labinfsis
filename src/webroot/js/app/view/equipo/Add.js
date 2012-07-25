@@ -50,7 +50,7 @@ Ext.define('labinfsis.view.equipo.Add', {
                     name:'estado_id',
                     fieldLabel:'Estado'
                 },{
-                    name:'estado_id',
+                    name:'tipo_id',
                     fieldLabel:'Tipo'
                 }]
             },{

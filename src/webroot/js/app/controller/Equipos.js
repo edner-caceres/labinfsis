@@ -79,7 +79,7 @@ Ext.define('labinfsis.controller.Equipos', {
         var values = form.getValues();
         if(form.getForm().isValid()){
             if(!record){
-                record = this.getEquiposModel().create();
+                record = this.getEquipoModel().create();
                 record.set(values);
                 this.getEquiposStore().insert(0, record);
             }else{
