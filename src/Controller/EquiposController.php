@@ -17,13 +17,19 @@ class EquiposController extends AppController {
     public function index() {
         $this->Equipo->recursive = 2;
         $this->layout = 'ajax';
-        $laboratorio = isset($this->request->query['laboratorio']) ? $this->request->query['laboratorio'] : 1;
-        $this->set('equipos', $this->Equipo->Asignacion->find('all', array(
-                    'conditions' => array(
-                        'Asignacion.laboratorio_id' => $laboratorio
-                    ),
-                    'order' => array('Equipo.nombre_equipo ASC')
-                )));
+        if (isset($this->request->query['laboratorio'])) {
+            $this->set('equipos', $this->Equipo->Asignacion->find('all', array(
+                        'conditions' => array(
+                            'Asignacion.laboratorio_id' => isset($this->request->query['laboratorio'])
+                        ),
+                        'order' => array('Equipo.nombre_equipo ASC')
+                    )));
+        } else {
+            $this->set('equipos', $this->Equipo->find('all', array(
+                        'order' => array('Equipo.nombre_equipo ASC')
+                    )));
+        }
+
         $this->set('estados', $this->Equipo->Estado->find('list'));
     }
 
@@ -40,6 +46,7 @@ class EquiposController extends AppController {
             throw new NotFoundException(__('Invalid equipo'));
         }
         $this->set('equipo', $this->Equipo->read(null, $id));
+        $this->set('laboratorios', $this->Equipo->Asignacion->Laboratorio->find('all'));
     }
 
     /**

@@ -9,7 +9,7 @@ Ext.define('labinfsis.view.registro.Registro' ,{
         this.items=[
         Ext.create('Ext.view.View', {
             deferInitialRefresh: false,
-            store: Ext.data.StoreManager.lookup('Equipos'),
+            store: Ext.data.StoreManager.lookup('EquiposIngresos'),
             tpl  : Ext.create('Ext.XTemplate',
                 '<tpl for=".">',
                 '<div class="item">',
@@ -66,6 +66,16 @@ Ext.define('labinfsis.view.registro.Registro' ,{
                                         }
                                 },{
                                         text:'Cursos'
+                                },'-',{
+                                    text:'Estados',
+                                    handler: function(){
+                                        Ext.widget('estados');
+                                    }
+                                },{
+                                    text:'Fabricantes',
+                                    handler: function(){
+                                        Ext.widget('fabricantes');
+                                    }
                                 }]
                             }
                     },{

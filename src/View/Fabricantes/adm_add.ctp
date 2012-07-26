@@ -1,20 +1,42 @@
-<div class="fabricantes form">
-<?php echo $this->Form->create('Fabricante');?>
-	<fieldset>
-		<legend><?php echo __('Adm Add Fabricante'); ?></legend>
-	<?php
-		echo $this->Form->input('nombre_fabricante');
-		echo $this->Form->input('descripcion_fabricante');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit'));?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
+<?php
+switch ($guardado) {
+    case 1: {
+            $respuesta = array(
+                'success' => true,
+                'mensage' => array(
+                    'titulo' => __('Fabricante registrado', true),
+                    'msg' => __('El nuevo Fabricante fue guardado con exito en el catalogo del sistema', true)
+                ),
+                'data' => array(
+                    'id'=>$newID,
+                    'nombre_fabricante'=>$this->data['Fabricante']['nombre_fabricante'],
+                    'descripcion_fabricante'=>$this->data['Fabricante']['descripcion_fabricante']
+                )
+            );
+            print json_encode($respuesta);
+        } break;
+    case 0: {
 
-		<li><?php echo $this->Html->link(__('List Fabricantes'), array('action' => 'index'));?></li>
-		<li><?php echo $this->Html->link(__('List Componentes'), array('controller' => 'componentes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Componente'), array('controller' => 'componentes', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+            $resultado = array(
+                'success' => false,
+                'mensage' => array(
+                    'titulo' => __('Error al guardar', true),
+                    'msg' => __('El formulario tiene errores, corrijalos y vuelva ha intentarlo', true)
+                ),
+                'errors' => $this->validationErrors['Fabricante']
+            );
+            print json_encode($resultado);
+        } break;
+    case 2:
+        $resultado = array(
+            'success' => false,
+            'mensage' => array(
+                'titulo' => __('Error al guardar', true),
+                'msg' => __('NO se recibio datos para registrar', true)
+            ),
+            'errors' => array()
+        );
+        print json_encode($resultado);
+        break;
+}
+?>

@@ -25,6 +25,9 @@
 .icon-cancel-16x16{
     background-image: url(../img/icons/common/16x16/cancel.png) !important;
 }
+.icon-computer-16x16 {
+    background-image:url(../img/icons/application/16x16/computer.png) !important;
+}
 /*32x32*/
 .icon-add-32x32{
     background-image: url(../img/icons/common/32x32/add.png) !important;

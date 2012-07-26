@@ -1,15 +1,12 @@
-Ext.define('labinfsis.store.Registros', {
+Ext.define('labinfsis.store.EquiposIngresos', {
     extend: 'Ext.data.Store',
-    model: 'labinfsis.model.Registro',
+    model: 'labinfsis.model.Equipo',
     autoLoad: true,
     proxy: {
         type: 'ajax',
         method:'POST',
         api: {
-            read: 'adm/registros/',
-            update: 'adm/registros/edit',
-            create: 'adm/registros/add',
-            destroy: 'adm/registros/delete'
+            read: 'registros/allocable'
         },
         reader: {
             type: 'json',
@@ -23,5 +20,9 @@ Ext.define('labinfsis.store.Registros', {
             root: 'data',
             encode:true
         }
-    }
+    },
+    sorters: [{
+        property : 'nombre_laboratorio',
+        direction: 'asc'
+    }]
 });

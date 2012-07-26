@@ -19,6 +19,24 @@ class RegistrosController extends AppController {
         $this->layout = 'ingreso';
         $this->set('registros', $this->paginate());
     }
+    
+    /**
+     * index method
+     *
+     * @return void
+     */
+    public function allocable() {
+        $this->Registro->recursive = 2;
+        $this->layout = 'ajax';
+        $laboratorio = isset($this->request->query['laboratorio']) ? $this->request->query['laboratorio'] : 1;
+        $this->set('equipos', $this->Registro->Equipo->Asignacion->find('all', array(
+                    'conditions' => array(
+                        'Asignacion.laboratorio_id' => $laboratorio
+                    ),
+                    'order' => array('Equipo.nombre_equipo ASC')
+                )));
+        $this->set('estados', $this->Registro->Equipo->Estado->find('list'));
+    }
 
     public function ingresar() {
         if ($this->request->is('post')) {

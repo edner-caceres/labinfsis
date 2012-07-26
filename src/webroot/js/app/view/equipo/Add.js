@@ -48,7 +48,9 @@ Ext.define('labinfsis.view.equipo.Add', {
                     name:'nombre_equipo'
                 },{
                     name:'estado_id',
-                    fieldLabel:'Estado'
+                    fieldLabel: 'Estado',
+                    admin: true,
+                    xtype:'selectorestados'
                 },{
                     name:'tipo_id',
                     fieldLabel:'Tipo'

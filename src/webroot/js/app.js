@@ -15,7 +15,9 @@ Ext.application({
         'Equipos',
         'Laboratorios',
         'Registros',
-        'Componentes'
+        'Componentes',
+        'Estados',
+        'Fabricantes'
     ],
     
     launch: function() {

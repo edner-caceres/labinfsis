@@ -1,14 +1,14 @@
-Ext.define('labinfsis.view.equipo.List' ,{
+Ext.define('labinfsis.view.estado.List' ,{
     extend: 'Ext.window.Window',
-    alias : 'widget.equipos',
-    layout: 'border',
+    alias : 'widget.estados',
+    layout: 'fit',
     autoShow: true,
     modal:true,
-    width: 900,
-    height: 600,
-    iconCls: 'icon-computer-16x16',
-    title: 'Lista de equipos registrados',
-    initComponent: function() {        
+    width: 550,
+    height: 415,
+//    iconCls: 'icon-computer-16x16',
+    title: 'Lista de Estados',
+    initComponent: function() {
         var sm = Ext.create('Ext.selection.CheckboxModel',{
             listeners:{
                 'selectionchange': this.selectChange,
@@ -17,43 +17,30 @@ Ext.define('labinfsis.view.equipo.List' ,{
         });
 
         this.items=[{
-            id:'listaequipos',
-            region:'center',
+            id:'listaestados',
             xtype: 'grid',
             border: false,
-            store: 'Equipos',
+            store: 'Estados',
             columns : [{
                 header: 'Nombre',
-                dataIndex: 'nombre_equipo',
+                dataIndex: 'nombre_estado',
                 renderer:function(value, metaData){
                     metaData.style = 'font-size:120%; font-weight: bold';
                     return value;
                 },
-                width:100
+                width:150
             },{
-                header: 'NIA',
-                dataIndex: 'nia',
-                width:150     
-            }, {
-                header: 'Codigo Interno',
-                dataIndex: 'codigo',
-                width:100
-            },{
-                header: 'Estado',
-                dataIndex: 'nombre_estado',
-                width:100
+                header: 'Descripcion',
+                dataIndex: 'descripcion_estado',
+                width: 350
             }],
             selModel: sm,
             bbar:Ext.create('Ext.PagingToolbar', {
-                store: Ext.data.StoreManager.lookup('Equipos'),
+                store: Ext.data.StoreManager.lookup('Estados'),
                 displayInfo: true,
-                displayMsg: 'Mostrando {0} - {1} equipos de  {2}',
-                emptyMsg: "No hay Equipos registrados"
+                displayMsg: 'Mostrando {0} - {1} Estados de  {2}',
+                emptyMsg: "No hay Estados registrados"
             })
-        },{
-            xtype:'equipoview',
-            width: 390,
-            region:'east'
         }];
         
         this.tbar =[{
@@ -65,7 +52,7 @@ Ext.define('labinfsis.view.equipo.List' ,{
                 items:{
                     scale: 'large',
                     text: 'Registrar',
-                    action: 'addequipo',
+                    action: 'addestado',
                     iconCls: 'icon-add-32x32'
                 }
             },{
@@ -76,12 +63,12 @@ Ext.define('labinfsis.view.equipo.List' ,{
                 items:[{
                     text: 'Modificar',
                     iconCls: 'icon-edit-32x32',
-                    action: 'editequipo',
+                    action: 'editestado',
                     disabled:true
                 },{
                     text: 'Eliminar',
                     iconCls:'icon-delete-32x32',
-                    action:'deleteequipo',
+                    action:'deleteestado',
                     disabled:true
                 }]
             }]
@@ -89,8 +76,8 @@ Ext.define('labinfsis.view.equipo.List' ,{
         this.callParent(arguments);
     },
     selectChange: function( sm, selected, options ){
-        var bedit = this.down('button[action=editequipo]');
-        var bdelete = this.down('button[action=deleteequipo]');
+        var bedit = this.down('button[action=editestado]');
+        var bdelete = this.down('button[action=deleteestado]');
         
         if(selected.length > 0){
             bdelete.enable();
@@ -99,8 +86,6 @@ Ext.define('labinfsis.view.equipo.List' ,{
             }else{
                 bedit.disable();
             }
-            var view = this.down('equipoview');
-            view.updateInfo(selected[0]);
         }else{
             bedit.disable();
             bdelete.disable();

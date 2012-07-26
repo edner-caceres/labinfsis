@@ -5,6 +5,7 @@
 	<?php
 		echo $this->Form->input('nombre_laboratorio');
 		echo $this->Form->input('numero_de_equipos');
+                echo $this->Form->input('codigo_laboratorio');
 		echo $this->Form->input('descripcion_laboratorio');
 	?>
 	</fieldset>

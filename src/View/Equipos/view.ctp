@@ -27,7 +27,7 @@
     <h3><?php echo __('Componentes'); ?></h3>
     <table cellpadding = "0" cellspacing = "0">
         <tr>
-            <th><?php echo __('Pieza'); ?></th>
+            <th><?php echo __('Componente'); ?></th>
             <th><?php echo __('Modelo'); ?></th>
             <th><?php echo __('Fabricante'); ?></th>
             <th><?php echo __('Numero De Serie'); ?></th>
@@ -57,9 +57,10 @@
                 </tr>
         <?php
                 $i = 0;
+                
                 foreach ($equipo['Asignacion'] as $asignacion): ?>
                     <tr>
-                        <td><?php echo $asignacion['laboratorio_id']; ?></td>
+                        <td><?php echo $laboratorios[$asignacion['laboratorio_id']]['Laboratorio']['codigo_laboratorio']; ?></td>
                         <td><?php echo $asignacion['fecha_asignacion']; ?></td>
                         <td><?php echo $asignacion['fecha_retiro']; ?></td>
                     </tr>

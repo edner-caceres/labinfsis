@@ -1,10 +1,12 @@
 Ext.define('labinfsis.controller.Registros', {
     extend: 'Ext.app.Controller',
     stores: [
-    'Registros'
+    'Registros',
+    'EquiposIngresos'
     ],
     models: [
-    'Registro'
+    'Registro',
+    'Equipo'
     ],
     views: [
     'registro.Registro',
@@ -38,7 +40,7 @@ Ext.define('labinfsis.controller.Registros', {
             },
             'registros #lab-select-tb':{
                 change: function(combo, newValue, oldValue, eOpts){
-                    var store = Ext.data.StoreManager.lookup('Equipos');
+                    var store = Ext.data.StoreManager.lookup('EquiposIngresos');
                     store.suspendEvents();
                     store.clearFilter();
                     store.resumeEvents();
@@ -167,7 +169,7 @@ Ext.define('labinfsis.controller.Registros', {
         
     },
     applyFilter: function(){
-        var store = Ext.data.StoreManager.lookup('Equipos');
+        var store = Ext.data.StoreManager.lookup('EquiposIngresos');
         //TODO: the suspend/resume hack can be removed once Filtering has been updated
         store.suspendEvents();
         store.clearFilter();

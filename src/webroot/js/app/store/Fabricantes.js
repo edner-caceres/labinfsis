@@ -1,15 +1,15 @@
-Ext.define('labinfsis.store.Registros', {
+Ext.define('labinfsis.store.Fabricantes', {
     extend: 'Ext.data.Store',
-    model: 'labinfsis.model.Registro',
+    model: 'labinfsis.model.Fabricante',
     autoLoad: true,
     proxy: {
         type: 'ajax',
         method:'POST',
         api: {
-            read: 'adm/registros/',
-            update: 'adm/registros/edit',
-            create: 'adm/registros/add',
-            destroy: 'adm/registros/delete'
+            read: 'adm/fabricantes',
+            update: 'adm/fabricantes/edit',
+            create: 'adm/fabricantes/add',
+            destroy: 'adm/fabricantes/delete'
         },
         reader: {
             type: 'json',

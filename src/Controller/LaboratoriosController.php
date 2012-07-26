@@ -34,69 +34,7 @@ class LaboratoriosController extends AppController {
         }
         $this->set('laboratorio', $this->Laboratorio->read(null, $id));
     }
-
-    /**
-     * add method
-     *
-     * @return void
-     */
-    public function add() {
-        if ($this->request->is('post')) {
-            $this->Laboratorio->create();
-            if ($this->Laboratorio->save($this->request->data)) {
-                $this->Session->setFlash(__('The laboratorio has been saved'));
-                $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Session->setFlash(__('The laboratorio could not be saved. Please, try again.'));
-            }
-        }
-    }
-
-    /**
-     * edit method
-     *
-     * @param string $id
-     * @return void
-     */
-    public function edit($id = null) {
-        $this->Laboratorio->id = $id;
-        if (!$this->Laboratorio->exists()) {
-            throw new NotFoundException(__('Invalid laboratorio'));
-        }
-        if ($this->request->is('post') || $this->request->is('put')) {
-            if ($this->Laboratorio->save($this->request->data)) {
-                $this->Session->setFlash(__('The laboratorio has been saved'));
-                $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Session->setFlash(__('The laboratorio could not be saved. Please, try again.'));
-            }
-        } else {
-            $this->request->data = $this->Laboratorio->read(null, $id);
-        }
-    }
-
-    /**
-     * delete method
-     *
-     * @param string $id
-     * @return void
-     */
-    public function delete($id = null) {
-        if (!$this->request->is('post')) {
-            throw new MethodNotAllowedException();
-        }
-        $this->Laboratorio->id = $id;
-        if (!$this->Laboratorio->exists()) {
-            throw new NotFoundException(__('Invalid laboratorio'));
-        }
-        if ($this->Laboratorio->delete()) {
-            $this->Session->setFlash(__('Laboratorio deleted'));
-            $this->redirect(array('action' => 'index'));
-        }
-        $this->Session->setFlash(__('Laboratorio was not deleted'));
-        $this->redirect(array('action' => 'index'));
-    }
-
+    
     /**
      * adm_index method
      *
@@ -142,7 +80,6 @@ class LaboratoriosController extends AppController {
         } else {
             $this->set('guardado', 2); // mo se recibieron datos para guardar
         }
-
     }
 
     /**
@@ -152,7 +89,7 @@ class LaboratoriosController extends AppController {
      * @return void
      */
     public function adm_edit($id = null) {
-        
+
         $this->layout = 'ajax';
 
         $datos = json_decode(stripslashes(is_array($this->data) ? $this->data[0] : $this->data)); //decodificamos la informacion
