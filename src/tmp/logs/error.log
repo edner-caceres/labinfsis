@@ -232,3 +232,628 @@
 #1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
 #2 L:\edcalo\proyectos\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2012-07-10 01:05:52 Error: [MissingControllerException] Controller class LibsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-15 17:46:47 Error: [MissingControllerException] Controller class AdmequiposController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:03:40 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:04:46 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:05:17 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:08:18 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:09:05 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:09:06 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:09:07 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:09:08 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:09:11 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:28:58 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:29:21 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:29:21 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:36:21 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-16 05:39:10 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:33:55 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:37:17 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:39:07 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:41:25 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:41:28 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:41:28 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:41:30 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:41:32 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:41:32 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:41:33 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:41:33 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:44:25 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:44:27 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:44:30 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:45:14 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:47:54 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:50:42 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:41 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:43 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:44 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:45 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:45 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:48 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:49 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:50 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:51 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:53 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:55 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:56 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:52:59 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:01 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:03 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:04 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:05 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:05 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:05 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:06 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:06 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:06 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:06 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:06 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:07 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:08 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:10 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:53:10 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 02:54:23 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 03:06:46 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 03:06:48 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 03:06:49 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 03:06:49 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 03:06:50 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 03:06:50 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 17:28:26 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 17:28:40 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-18 17:35:16 Error: [MissingControllerException] Controller class IconsController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-19 22:33:48 Error: [MissingControllerException] Controller class Equipos.comController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-19 22:47:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-23 01:04:08 Error: [MissingControllerException] Controller class RegistroController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-07-23 01:12:20 Error: [MissingViewException] View file "D:\elvis.caceres\Dropbox\My projects\labinfsis\src\View\Equipos\tolist.ctp" is missing.
+#0 C:\xampp\cakephp-2.1\lib\Cake\View\View.php(460): View->_getViewFileName(NULL)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(959): View->render(NULL, NULL)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(110): Controller->render()
+#3 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-24 01:20:13 Error: [PDOException] SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for integer: "Laboratorio de computo 1"
+LINE 1: ...rio"."id")  WHERE "Asignacion"."laboratorio_id" = 'Laborator...
+                                                             ^
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Asignac...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Asignac...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Asignac...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Asignacion), Array)
+#5 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\EquiposController.php(26): Model->find('all', Array)
+#6 [internal function]: EquiposController->index()
+#7 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(EquiposController), Array)
+#8 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#10 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-07-25 01:02:18 Error: [NotFoundException] Invalid equipo
+#0 [internal function]: EquiposController->view('0')
+#1 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(EquiposController), Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(EquiposController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-25 23:59:32 Error: [MissingActionException] Action RegistrosController::adm_list() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 00:00:10 Error: [MissingActionException] Action RegistrosController::list() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 00:59:36 Error: [MissingActionException] Action RegistrosController::Controller() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 00:59:51 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 00:59:52 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 00:59:54 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 01:03:19 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 01:03:38 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 01:03:39 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 01:03:39 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 01:03:40 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 01:03:41 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 01:03:42 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 01:03:43 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 01:03:44 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 01:03:45 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 01:10:48 Error: [MissingActionException] Action RegistrosController::webroot() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 03:23:51 Error: [MissingActionException] Action LaboratoriosController::add() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(LaboratoriosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:12 Error: [MissingActionException] Action RegistrosController::webroot() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 16:06:24 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 18:43:44 Error: [MissingActionException] Action RegistrosController::webroot() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-26 23:44:31 Error: [MissingActionException] Action RegistrosController::webroot() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-28 00:08:05 Error: [MissingActionException] Action RegistrosController::webroot() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-28 01:02:03 Error: [MissingActionException] Action RegistrosController::webroot() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-07-28 01:25:09 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-28 01:26:18 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-28 01:26:21 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-28 01:26:22 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-28 01:26:22 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-28 01:26:23 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-28 01:26:24 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-28 01:26:42 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-28 01:26:57 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-28 01:32:53 Error: [NotFoundException] Invalid categoria
+#0 [internal function]: CategoriasController->view()
+#1 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-07-28 01:39:57 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-28 01:41:43 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-28 01:41:55 Error: [PDOException] SQLSTATE[42712]: Duplicate alias: 7 ERROR:  table name "Categoria" specified more than once
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(437): PDOStatement->execute(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT "Categor...', Array)
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(647): DboSource->execute('SELECT "Categor...', Array, Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Datasource\DboSource.php(1058): DboSource->fetchAll('SELECT "Categor...', false)
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1084): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\CategoriasController.php(18): Controller->paginate()
+#8 [internal function]: CategoriasController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CategoriasController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-07-31 16:00:48 Error: [MissingTableException] Table registros for model Registro was not found in datasource default.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3408): Model->setSource('registros')
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): Model->getDataSource()
+#2 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#3 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#4 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\RegistrosController.php(20): Controller->paginate()
+#5 [internal function]: RegistrosController->index()
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(482): ReflectionMethod->invokeArgs(Object(RegistrosController), Array)
+#7 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#9 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

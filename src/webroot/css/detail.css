@@ -1,8 +1,7 @@
 /** containers **/
 
 div.view {
-
-	padding:10px 2%;
+	padding:10px 0px;
 }
 
 div.view a {
@@ -46,6 +45,7 @@ div.view  p {
 .related {
 	clear: both;
 	display: block;
+        padding-left: 4px;
 }
 /** Tables **/
 .related table {

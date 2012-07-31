@@ -1,8 +1,7 @@
 <?php
-//print_r($equipos);
 $datos = array();
-foreach ($equipos as $equipo) {
-    array_push($datos,$equipo['Equipo']);
+foreach ($categorias as $categoria) {
+    array_push($datos,$categoria['Categoria']);
 }
 $respuesta = array(
     'success' => true,

@@ -52,7 +52,9 @@ Ext.define('labinfsis.view.equipo.Add', {
                     admin: true,
                     xtype:'selectorestados'
                 },{
-                    name:'tipo_id',
+                    name:'categoria_id',
+                    xtype:'selectorcategoria',
+                    admin:true,
                     fieldLabel:'Tipo'
                 }]
             },{

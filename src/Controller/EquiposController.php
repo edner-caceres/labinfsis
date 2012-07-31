@@ -29,8 +29,6 @@ class EquiposController extends AppController {
                         'order' => array('Equipo.nombre_equipo ASC')
                     )));
         }
-
-        $this->set('estados', $this->Equipo->Estado->find('list'));
     }
 
     /**
@@ -47,6 +45,7 @@ class EquiposController extends AppController {
         }
         $this->set('equipo', $this->Equipo->read(null, $id));
         $this->set('laboratorios', $this->Equipo->Asignacion->Laboratorio->find('all'));
+        
     }
 
     /**
@@ -189,7 +188,9 @@ class EquiposController extends AppController {
             $this->request->data = $this->Equipo->read(null, $id);
         }
         $estados = $this->Equipo->Estado->find('list');
+        $categorias = $this->Equipo->Categoria->find('list');
         $this->set(compact('estados'));
+        $this->set(compact('categorias'));
     }
 
     /**

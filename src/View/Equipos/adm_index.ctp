@@ -4,6 +4,7 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('estado_id');?></th>
+                        <th><?php echo $this->Paginator->sort('categoria_id');?></th>
 			<th><?php echo $this->Paginator->sort('nia');?></th>
 			<th><?php echo $this->Paginator->sort('codigo');?></th>
 			<th><?php echo $this->Paginator->sort('nombre_equipo');?></th>
@@ -11,11 +12,14 @@
 			<th class="actions"><?php echo __('Actions');?></th>
 	</tr>
 	<?php
-	foreach ($equipos as $equipo): ?>
+	foreach ($equipos as $equipo):?>
 	<tr>
 		<td><?php echo h($equipo['Equipo']['id']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($equipo['Estado']['nombre_estado'], array('controller' => 'estados', 'action' => 'view', $equipo['Estado']['id'])); ?>
+		</td>
+                <td>
+			<?php echo $this->Html->link($equipo['Categoria']['nombre_categoria'], array('controller' => 'categorias', 'action' => 'view', $equipo['Categoria']['id'])); ?>
 		</td>
 		<td><?php echo h($equipo['Equipo']['nia']); ?>&nbsp;</td>
 		<td><?php echo h($equipo['Equipo']['codigo']); ?>&nbsp;</td>

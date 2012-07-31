@@ -43,15 +43,30 @@ body, .x-body {
 img {
     background-color: transparent;
 } 
-
-.x-mask-loading div {
-    background-color:#FBFBFB;
-    background-image:url(../img/loading.gif) !important;
-    height: 50px;
-    width: 170px;
-    background-position: bottom center;
+.note{
+   background-position: bottom center;
     text-align: center;
     font-size: 14px;
+    border: 1px solid;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.65) inset;
+    clear: both;
+    margin-bottom: 9px;
+    margin-top: 10px;
+    padding: 7px 15px 7px 7px;
+    text-shadow: 0 1px 1px #FFFFFF;
+     background: url("../img/sprites/alertboxes/bg-note.png") repeat-x scroll 0 0 #DFDFDF;
+    border-color: #A3A3A3; 
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loading {
+    background-image:url(../img/loading-anim.gif);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 32px;
+    
 }
 .x-form-color-trigger{
     cursor:pointer;

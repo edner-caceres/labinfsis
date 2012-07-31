@@ -5,6 +5,7 @@
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('estado_id');
+                echo $this->Form->input('categoria_id');
 		echo $this->Form->input('nia');
 		echo $this->Form->input('codigo');
 		echo $this->Form->input('nombre_equipo');

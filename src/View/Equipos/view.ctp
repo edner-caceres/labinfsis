@@ -15,7 +15,10 @@
         <dd>
             <?php echo h($equipo['Estado']['nombre_estado']); ?>
         </dd>
-        
+        <dt><?php echo __('Tipo'); ?></dt>
+        <dd>
+            <?php echo h($equipo['Categoria']['nombre_categoria']); ?>
+        </dd>
         <dt><?php echo __('Descripcion Equipo'); ?></dt>
         <dd>
             <?php echo h($equipo['Equipo']['descripcion_equipo']); ?>
@@ -60,7 +63,7 @@
                 
                 foreach ($equipo['Asignacion'] as $asignacion): ?>
                     <tr>
-                        <td><?php echo $laboratorios[$asignacion['laboratorio_id']]['Laboratorio']['codigo_laboratorio']; ?></td>
+                        <td><?php echo $laboratorios[$asignacion['laboratorio_id']]['Laboratorio']['nombre_laboratorio']; ?></td>
                         <td><?php echo $asignacion['fecha_asignacion']; ?></td>
                         <td><?php echo $asignacion['fecha_retiro']; ?></td>
                     </tr>

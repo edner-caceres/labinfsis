@@ -4,8 +4,8 @@ Ext.define('labinfsis.view.equipo.View', {
     title:'Detalle del equipo',
     autoScroll: true,
     initComponent: function() {
-        /*this.tpl= [
-        '<div class="details">',
+        this.tpl= [
+        '<div class="note">',
             '<tpl for=".">',
                 (!Ext.isIE6? '<img src="icons/{thumb}" />' : 
                     '<div style="width:74px;height:74px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'icons/{thumb}\')"></div>'),
@@ -18,32 +18,39 @@ Ext.define('labinfsis.view.equipo.View', {
                     '<span>{codigo}</span></p>',
                     '<p><b>Estado:</b>',
                     '<span>{nombre_estado}</span></p>',
-                    '<p><b>Descripcion:</b>',
-                    '<span>{descripcion_equipo}</span></p>',
                 '</div>',
             '</tpl>',
         '</div>'
-        ];*/
-        this.tpl = [
-            '<div class="details">',
-            '<tpl for=".">',
-                '<div class="details-info">',
-                    '<p>Recuperando informacion del equipo: ',
-                    '<span><b>{nombre_equipo}</b></span></p>',
-                '</div>',
-            '</tpl>',
+        ];
+        /*this.tpl = [
+        '<div class="note">',
+        '<tpl for=".">',
+        '<div class="loading">',
+        '<p>Recuperando informacion del equipo: ',
+        '<span><b>{nombre_equipo}</b></span></p>',
+        '</div>',
+        '</tpl>',
         '</div>'
-    ]
+        ]*/
         this.bodyStyle = "padding:10px";
-        this.html = 'Seleccione un equipo para ver el detalle';
+        this.html = '<div class="note">Seleccione un equipo para ver el detalle</div>';
+            
     
         this.callParent(arguments);
     },
     
-    updateInfo: function(record) {
-        this.tpl.overwrite(this.body, record.data);
-        this.body.load({url:'/equipos/view/'+record.get('id')});
-        /*
+    updateInfo: function(records) {
+        //this.tpl.overwrite(this.body, record.data);
+        if(records.length == 1){
+            this.body.mask('Recuperando informacion del equipo: ' + records[0].get('nombre_equipo'));
+            this.body.load({
+                url:'/equipos/view/'+records[0].get('id')
+            });
+        }else{
+            this.tpl.overwrite(this.body, records);
+        }
+        
+    /*
         this.tpl.overwrite(this.body, record.data);
         this.body.highlight();*/
     }

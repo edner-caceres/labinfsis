@@ -76,6 +76,11 @@ Ext.define('labinfsis.view.registro.Registro' ,{
                                     handler: function(){
                                         Ext.widget('fabricantes');
                                     }
+                                },{
+                                    text:'Categorias',
+                                    handler: function(){
+                                        Ext.widget('categorias');
+                                    }
                                 }]
                             }
                     },{

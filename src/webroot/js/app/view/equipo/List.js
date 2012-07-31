@@ -35,13 +35,22 @@ Ext.define('labinfsis.view.equipo.List' ,{
                 dataIndex: 'nia',
                 width:150     
             }, {
-                header: 'Codigo Interno',
+                header: 'S/N',
                 dataIndex: 'codigo',
                 width:100
             },{
-                header: 'Estado',
-                dataIndex: 'nombre_estado',
-                width:100
+                header: 'Tipo',
+                dataIndex: 'categoria_id',
+                width:100,
+                renderer: function(value, metaData, record, rowIndex, colIndex, store){
+                    var sp = Ext.data.StoreManager.lookup('Categorias');
+                    var index = sp.find('id', value);
+                    if(index >= 0 ){
+                        return sp.getAt(index).get('nombre_categoria');
+                    }
+                           
+                    return value;
+                }  
             }],
             selModel: sm,
             bbar:Ext.create('Ext.PagingToolbar', {
@@ -100,7 +109,7 @@ Ext.define('labinfsis.view.equipo.List' ,{
                 bedit.disable();
             }
             var view = this.down('equipoview');
-            view.updateInfo(selected[0]);
+            view.updateInfo(selected);
         }else{
             bedit.disable();
             bdelete.disable();

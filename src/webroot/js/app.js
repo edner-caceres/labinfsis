@@ -17,7 +17,8 @@ Ext.application({
         'Registros',
         'Componentes',
         'Estados',
-        'Fabricantes'
+        'Fabricantes',
+        'Categorias'
     ],
     
     launch: function() {
