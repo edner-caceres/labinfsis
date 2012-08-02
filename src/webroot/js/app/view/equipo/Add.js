@@ -1,6 +1,7 @@
 Ext.define('labinfsis.view.equipo.Add', {
     extend: 'Ext.window.Window',
     alias : 'widget.equipoadd',
+    requires:["Ext.ux.field.ImageField"],
     title : 'Registrar nuevo Equipo',
     layout: 'fit',
     autoShow: true,
@@ -53,8 +54,8 @@ Ext.define('labinfsis.view.equipo.Add', {
                     xtype:'selectorestados'
                 },{
                     name:'categoria_id',
-                    xtype:'selectorcategoria',
-                    admin:true,
+                    xtype:'imagefield',
+                    //admin:true,
                     fieldLabel:'Tipo'
                 }]
             },{

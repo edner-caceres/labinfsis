@@ -1,7 +1,7 @@
 <?php
         //echo $this->Html->charset('utf-8');
 	echo $this->Html->script('app.js', array('inline' => false));
-        echo $this->Html->css('http://localhost:9191/libs/ext-4.1.1/examples/ux/css/ItemSelector.css', 'stylesheet', array('inline' => false));
+        echo $this->Html->css('http://localhost/libs/ext-4.1.1/examples/ux/css/ItemSelector.css', 'stylesheet', array('inline' => false));
 ?>
 
 <div id="main_container">
