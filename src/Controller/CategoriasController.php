@@ -142,6 +142,9 @@ class CategoriasController extends AppController {
         }
         $this->set('categorias', $categorias);
     }
+    public function update() {
+        
+    }
 
     /**
      * adm_view method

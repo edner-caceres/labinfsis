@@ -1,19 +1,19 @@
 Ext.define('labinfsis.controller.Categorias', {
     extend: 'Ext.app.Controller',
     stores: [
-        'Categorias'
+    'Categorias'
     ],
     models: [
-        'Categoria'
+    'Categoria'
     ],
     views: [
-        'categoria.List',
-        'categoria.Add',
-        'categoria.Selector'
+    'categoria.List',
+    'categoria.Add',
+    'categoria.Selector'
     ],
     requires:[
-        'Ext.window.MessageBox',
-        'Ext.tip.*'
+    'Ext.window.MessageBox',
+    'Ext.tip.*'
     ],
     seletedCategoriaId: 1,
     init: function() {
@@ -40,9 +40,10 @@ Ext.define('labinfsis.controller.Categorias', {
                     this.getCategoriasStore().load({
                         params:{
                             categoria: this.seletedCategoriaId
-                            }
+                        }
                     });
-                }
+                },
+                itemmove : this.updateCategoria
                 
             }
         });
@@ -63,6 +64,22 @@ Ext.define('labinfsis.controller.Categorias', {
         var view = Ext.widget('addcategoria');
         view.down('form').loadRecord(record);
 
+    },
+    updateCtagoria: function(ni, oldParent, newParent, index, eOpts){
+        this.up('categorias').down('#tree').getEl().mask('Saving...', 'x-mask-loading');
+        Ext.Ajax.request({  
+            url: '/adm/categorias/update',
+            params:{  
+                parent: newParent.attributes.id  
+            },  
+            success: function(){  
+                            
+            },  
+            failure: function(){  
+
+                Ext.Msg.alert('Error','Error saving the changes');  
+            }  
+        }); 
     },
     deleteCategoria: function(button){
         Ext.MessageBox.confirm(
