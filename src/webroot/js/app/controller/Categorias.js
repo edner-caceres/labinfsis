@@ -34,16 +34,8 @@ Ext.define('labinfsis.controller.Categorias', {
                 click: this.saveCategoria
             },
             'categorias #tree':{
-                itemclick: function(view, record, item, index, e, eOpts ){
-                    this.seletedCategoriaId = record.get('id')
-                    view.up('categorias').down('#listacategorias').setTitle('Subcategoria de ' + record.get('text'))
-                    this.getCategoriasStore().load({
-                        params:{
-                            categoria: this.seletedCategoriaId
-                        }
-                    });
-                },
-                itemmove : this.updateCategoria
+                itemclick: this.cargarSubCategorias,
+                itemmove : this.updateParent
                 
             }
         });
@@ -65,21 +57,32 @@ Ext.define('labinfsis.controller.Categorias', {
         view.down('form').loadRecord(record);
 
     },
-    updateCtagoria: function(ni, oldParent, newParent, index, eOpts){
-        this.up('categorias').down('#tree').getEl().mask('Saving...', 'x-mask-loading');
+    updateParent: function(ni, oldParent, newParent, index, eOpts){
+        //this.getListView().getEl().mask('Saving...', 'x-mask-loading');
         Ext.Ajax.request({  
-            url: '/adm/categorias/update',
-            params:{  
-                parent: newParent.attributes.id  
+            url: '/adm/categorias/update/'+oldParent.get('id'),
+            params:{
+                'data[Categoria][id]':oldParent.get('id'),
+                'data[Categoria][categoria_id]': newParent.get('id')
             },  
             success: function(){  
-                            
+                   return true;         
             },  
-            failure: function(){  
-
-                Ext.Msg.alert('Error','Error saving the changes');  
+            failure: function(){
+                
+                Ext.Msg.alert('Error','Error saving the changes');
+                return false;
             }  
         }); 
+    },
+    cargarSubCategorias: function(view, record, item, index, e, eOpts ){
+        this.seletedCategoriaId = record.get('id')
+        view.up('categorias').down('#listacategorias').setTitle('Subcategoria de ' + record.get('text'))
+        this.getCategoriasStore().load({
+            params:{
+                categoria: this.seletedCategoriaId
+            }
+        });
     },
     deleteCategoria: function(button){
         Ext.MessageBox.confirm(

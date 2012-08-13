@@ -142,8 +142,23 @@ class CategoriasController extends AppController {
         }
         $this->set('categorias', $categorias);
     }
-    public function update() {
-        
+
+    public function adm_update($id) {
+        $this->layout = 'ajax';
+        $this->Categoria->id = $id;
+        if (!$this->Categoria->exists()) {
+            throw new NotFoundException(__('Invalid categoria'));
+            $this->set('actualizado', FALSE);
+        }
+        if ($this->request->is('post') || $this->request->is('put')) {
+            if ($this->Categoria->save($this->request->data)) {
+                $this->set('actualizado', TRUE);
+            } else {
+                $this->set('actualizado', FALSE);
+            }
+        } else {
+            $this->set('actualizado', FALSE);
+        }
     }
 
     /**
@@ -175,6 +190,8 @@ class CategoriasController extends AppController {
                 $this->Session->setFlash(__('The categoria could not be saved. Please, try again.'));
             }
         }
+        ;
+        $this->set('categorias', $this->Categoria->find('list'));
     }
 
     /**
@@ -198,6 +215,7 @@ class CategoriasController extends AppController {
         } else {
             $this->request->data = $this->Categoria->read(null, $id);
         }
+        $this->set('categorias', $this->Categoria->find('list'));
     }
 
     /**
