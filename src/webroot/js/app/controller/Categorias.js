@@ -57,19 +57,21 @@ Ext.define('labinfsis.controller.Categorias', {
         view.down('form').loadRecord(record);
 
     },
-    updateParent: function(ni, oldParent, newParent, index, eOpts){
-        //this.getListView().getEl().mask('Saving...', 'x-mask-loading');
+    updateParent: function(ni, oldParent, newParent){
+        //Ext.getCmp('#tree').getEl().mask('Saving...', 'x-mask-loading');
         Ext.Ajax.request({  
-            url: '/adm/categorias/update/'+oldParent.get('id'),
+            url: '/adm/categorias/update/'+ni.get('id'),
             params:{
-                'data[Categoria][id]':oldParent.get('id'),
-                'data[Categoria][categoria_id]': newParent.get('id')
+                'data[Categoria][id]':ni.get('id'),
+                'data[Categoria][categoria_id]': newParent.get('id'),
+                'data[Categoria][old_categoria_id]': oldParent.get('id')
             },  
-            success: function(){  
+            success: function(){
+                //Ext.getCmp('#tree').getEl().unmask();
                    return true;         
             },  
             failure: function(){
-                
+                //Ext.getCmp('#tree').getEl().unmask();
                 Ext.Msg.alert('Error','Error saving the changes');
                 return false;
             }  
