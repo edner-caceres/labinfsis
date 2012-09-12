@@ -12,6 +12,7 @@ Ext.define('labinfsis.model.Categoria', {
     },
     'nombre_categoria',
     'descripcion_categoria',
-    'imagen_categoria'
+    'imagen_categoria',
+    {name: 'leaf', defaultValue: true}
     ]
 });

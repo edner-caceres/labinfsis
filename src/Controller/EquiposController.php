@@ -37,13 +37,14 @@ class EquiposController extends AppController {
      * @param string $id
      * @return void
      */
-    public function view($id = null) {
-        $this->Equipo->id = $id;
+    public function view() {        
         $this->layout = 'detail';
-        if (!$this->Equipo->exists()) {
-            throw new NotFoundException(__('Invalid equipo'));
-        }
-        $this->set('equipo', $this->Equipo->read(null, $id));
+        $id = explode(',', $this->request->data['equipos']);
+        $this->set('equipos', $this->Equipo->find('all', array(
+            'conditions'=>  array(
+                'Equipo.id' => $id
+            )
+        )));
         $this->set('laboratorios', $this->Equipo->Asignacion->Laboratorio->find('all'));
         
     }

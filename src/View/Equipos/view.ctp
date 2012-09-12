@@ -1,3 +1,6 @@
+<?php foreach ($equipos as $equipo): {
+    
+} ?>
 <div class="equipos view">
     <h2><?php echo __('Equipo'); ?> - <?php echo h($equipo['Equipo']['nombre_equipo']); ?></h2>
     <dl>
@@ -72,6 +75,4 @@
 
 
 </div>
-
-
-
+<?php endforeach; ?>

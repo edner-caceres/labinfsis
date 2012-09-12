@@ -13,8 +13,21 @@ Ext.define('labinfsis.controller.Categorias', {
     ],
     requires:[
     'Ext.window.MessageBox',
-    'Ext.tip.*'
+    'Ext.tip.*',
+    'labinfsis.view.categoria.CategoriaView',
+    'labinfsis.view.categoria.Tree',
+    'labinfsis.view.categoria.View',
+    'Ext.data.TreeStore',
+    'Ext.data.proxy.Ajax',
+    'Ext.tree.Column',
+    'Ext.tree.View',
+    'Ext.selection.TreeModel',
+    'Ext.tree.plugin.TreeViewDragDrop'
     ],
+    refs: [{
+        ref: 'categoriasList',
+        selector: 'categorias'
+    }], 
     seletedCategoriaId: 1,
     init: function() {
         this.control({
@@ -33,7 +46,7 @@ Ext.define('labinfsis.controller.Categorias', {
             'addcategoria button[action=save]': {
                 click: this.saveCategoria
             },
-            'categorias #tree':{
+            'categorias > categoriatree':{
                 itemclick: this.cargarSubCategorias,
                 itemmove : this.updateParent
                 
@@ -44,8 +57,11 @@ Ext.define('labinfsis.controller.Categorias', {
         Ext.widget('addcategoria');
 
     },
-    viewCategoria:function(a, b, c){
-        console.log('Ver detalle de la categoria');
+    viewCategoria:function(model, selected){
+        var list = this.getCategoriasList(); 
+        
+        list.down('categoria').loadRecord(selected);
+        list.selectChange(selected);
     },
     editCategoria: function(source, record){
         if(source.getXType() == 'button'){
@@ -58,7 +74,8 @@ Ext.define('labinfsis.controller.Categorias', {
 
     },
     updateParent: function(ni, oldParent, newParent){
-        //Ext.getCmp('#tree').getEl().mask('Saving...', 'x-mask-loading');
+        var list = this.getCategoriasList(); 
+        list.down('categoriatree').getEl().mask('Saving...', 'x-mask-loading');
         Ext.Ajax.request({  
             url: '/adm/categorias/update/'+ni.get('id'),
             params:{
@@ -67,19 +84,26 @@ Ext.define('labinfsis.controller.Categorias', {
                 'data[Categoria][old_categoria_id]': oldParent.get('id')
             },  
             success: function(){
-                //Ext.getCmp('#tree').getEl().unmask();
-                   return true;         
+                list.down('categoriatree').getEl().unmask();
+                list.down('#listacategorias').setTitle('Subcategoria de ' + ni.get('text'));
+                this.getCategoriasStore().load({
+                    params:{
+                        categoria: ni.parentNode.get('id')
+                    }
+                });
+                return true;         
             },  
             failure: function(){
-                //Ext.getCmp('#tree').getEl().unmask();
+                list.down('categoriatree').getEl().unmask();
                 Ext.Msg.alert('Error','Error saving the changes');
                 return false;
-            }  
+            },
+            scope:this
         }); 
     },
     cargarSubCategorias: function(view, record, item, index, e, eOpts ){
-        this.seletedCategoriaId = record.get('id')
-        view.up('categorias').down('#listacategorias').setTitle('Subcategoria de ' + record.get('text'))
+        this.seletedCategoriaId = record.get('id');
+        view.up('categorias').selectChange(record);
         this.getCategoriasStore().load({
             params:{
                 categoria: this.seletedCategoriaId

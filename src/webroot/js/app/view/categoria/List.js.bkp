@@ -1,0 +1,148 @@
+Ext.define('labinfsis.view.categoria.List' ,{
+    extend: 'Ext.window.Window',
+    alias : 'widget.categorias',
+    layout: 'border',
+    autoShow: true,
+    modal:true,
+    width: 720,
+    height: 415,
+    iconCls:'icon-group-16x16',
+    title: 'Lista de Categorias',
+    initComponent: function() {
+        var sm = Ext.create('Ext.selection.CheckboxModel',{
+            listeners:{
+                'selectionchange': this.selectChange,
+                scope: this
+            }
+        });
+        this.treestore = Ext.create('Ext.data.TreeStore', {
+            proxy: {
+                type: 'ajax',
+                url: 'adm/categorias/tree',
+                method:'POST'
+            },
+            root: {
+                text: 'Categorias',
+                id: 1,
+                expanded: true
+            },
+            folderSort: true,            
+            sorters: [{
+                    property: 'text',
+                    direction: 'ASC'
+                }]
+        });
+
+        this.tree = Ext.create('Ext.tree.Panel', {
+            id:'tree',
+            title:'Categorias',
+            displayField: 'text',
+            store: this.treestore,
+            viewConfig: {
+                plugins: {
+                    ddGroup: 'categoriaDD',
+                    ptype: 'treeviewdragdrop'
+                }
+            },
+            region:'west',
+            rootVisible:false,
+            width: 200,
+            useArrows: true
+        });
+        this.grid = Ext.create('Ext.view.View', {
+            id:'listacategorias',
+            mixins: {
+                dragSelector: 'Ext.ux.DataView.DragSelector',
+                draggable   : 'Ext.ux.DataView.Draggable'
+            },
+    
+            tpl: [
+                '<tpl for=".">',
+                '<div class="thumb-wrap">',
+                '<div class="thumb">',
+                (!Ext.isIE6? '<img src="../view/chooser/icons/{thumb}" />' : 
+                    '<div style="width:76px;height:76px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'../view/chooser/icons/{thumb}\')"></div>'),
+                '</div>',
+                '<span>{name}</span>',
+                '</div>',
+                '</tpl>'
+            ],
+    
+            itemSelector: 'div.thumb-wrap',
+            multiSelect: true,
+            singleSelect: false,
+            cls: 'x-image-view',
+            autoScroll: true,
+    
+            initComponent: function() {
+                this.store = 'Categorias';        
+                this.mixins.dragSelector.init(this);
+                this.mixins.draggable.init(this, {
+                    ddConfig: {
+                        ddGroup: 'categoriaDD'
+                    },
+                    ghostTpl: [
+                        '<tpl for=".">',
+                        '<img src="../view/chooser/icons/{thumb}" />',
+                        '<tpl if="xindex % 4 == 0"><br /></tpl>',
+                        '</tpl>',
+                        '<div class="count">',
+                        '{[values.length]} images selected',
+                        '<div>'
+                    ]
+                });
+                this.callParent();
+            }
+        });
+        this.items=[this.grid, this.tree];
+        
+        this.tbar =[{
+                title: 'Acciones',
+                xtype: 'buttongroup',
+                columns: 3,
+                items:[{
+                        xtype: 'buttongroup',
+                        items:{
+                            scale: 'large',
+                            text: 'Registrar',
+                            action: 'addcategoria',
+                            iconCls: 'icon-add-32x32'
+                        }
+                    },{
+                        xtype: 'buttongroup',
+                        defaults:{
+                            scale: 'large'
+                        },
+                        items:[{
+                                text: 'Modificar',
+                                iconCls: 'icon-edit-32x32',
+                                action: 'editcategoria',
+                                disabled:true
+                            },{
+                                text: 'Eliminar',
+                                iconCls:'icon-delete-32x32',
+                                action:'deletecategoria',
+                                disabled:true
+                            }]
+                    }]
+            }];
+        this.callParent(arguments);
+    },
+    selectChange: function( sm, selected, options ){
+        var bedit = this.down('button[action=editcategoria]');
+        var bdelete = this.down('button[action=deletecategoria]');
+        
+        if(selected.length > 0){
+            bdelete.enable();
+            if(selected.length == 1){
+                bedit.enable();
+            }else{
+                bedit.disable();
+            }
+        }else{
+            bedit.disable();
+            bdelete.disable();
+        }
+    }
+
+});

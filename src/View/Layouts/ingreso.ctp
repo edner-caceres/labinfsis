@@ -35,6 +35,7 @@
             echo $this->Html->css('iconos', 'stylesheet', $opciones);
             echo $this->Html->css('fondos', 'stylesheet', $opciones);
             echo $this->Html->css('sca', 'stylesheet', $opciones);
+            echo $this->Html->css('chooser', 'stylesheet', $opciones);
 
             echo $scripts_for_layout;
         ?>

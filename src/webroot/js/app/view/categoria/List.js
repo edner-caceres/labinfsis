@@ -9,77 +9,26 @@ Ext.define('labinfsis.view.categoria.List' ,{
     iconCls:'icon-group-16x16',
     title: 'Lista de Categorias',
     initComponent: function() {
-        var sm = Ext.create('Ext.selection.CheckboxModel',{
-            listeners:{
-                'selectionchange': this.selectChange,
-                scope: this
-            }
-        });
-        this.treestore = Ext.create('Ext.data.TreeStore', {
-            proxy: {
-                type: 'ajax',
-                url: 'adm/categorias/tree',
-                method:'POST'
-            },
-            root: {
-                text: 'Categorias',
-                id: 1,
-                expanded: true
-            },
-            folderSort: true,            
-            sorters: [{
-                property: 'text',
-                direction: 'ASC'
-            }]
-        });
-
-        this.tree = Ext.create('Ext.tree.Panel', {
-            id:'tree',
-            title:'Categorias',
-            store: this.treestore,
-            viewConfig: {
-                plugins: {
-                    ptype: 'treeviewdragdrop'
-                }
-            },
-            region:'west',
-            rootVisible:false,
-            width: 200,
-            useArrows: true
-        });
-        this.grid = {
+        this.items = [
+        {
+            xtype: 'categoriatree',
+            region: 'west',
+            padding: 5,
+            width: 200
+        },
+        {
+            xtype: 'panel',
             id:'listacategorias',
-            xtype: 'grid',
-            region:'center',
-            border: false,
-            store: 'Categorias',
-            title: 'Sub-categorias',
-            columns : [{
-                header: 'Nombre',
-                dataIndex: 'nombre_categoria',
-                renderer:function(value, metaData){
-                    metaData.style = 'font-size:120%; font-weight: bold';
-                    return value;
-                },
-                width:120
-            },{
-                header: 'Descripcion',
-                dataIndex: 'descripcion_categoria',
-                renderer:function(value, metaData){
-                    metaData.style = 'white-space:normal';
-                    return value;
-                },
-                width: 330
-            }],
-            selModel: sm,
-            bbar:Ext.create('Ext.PagingToolbar', {
-                store: Ext.data.StoreManager.lookup('Categorias'),
-                displayInfo: true,
-                displayMsg: 'Mostrando {0} - {1} categorias de  {2}',
-                emptyMsg: "No hay categorias registrados"
-            })
-        };
-        this.items=[this.grid, this.tree];
+            layout: 'border',
+            region: 'center',
+            padding: '5 5 5 0',
+            items: [{
+                id:'img-chooser-view',
+                xtype: 'categoriaview',
+                trackOver: true,
+                region:'center'
+            }]
+        }];
         
         this.tbar =[{
             title: 'Acciones',
@@ -113,7 +62,7 @@ Ext.define('labinfsis.view.categoria.List' ,{
         }];
         this.callParent(arguments);
     },
-    selectChange: function( sm, selected, options ){
+    selectChange: function( selected ){
         var bedit = this.down('button[action=editcategoria]');
         var bdelete = this.down('button[action=deletecategoria]');
         
