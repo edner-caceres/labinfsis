@@ -857,3 +857,114 @@ LINE 1: ...rio"."id")  WHERE "Asignacion"."laboratorio_id" = 'Laborator...
 #8 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
 #9 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2012-08-16 21:53:57 Error: [MissingActionException] Action RegistrosController::webroot() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-13 14:13:16 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3382): ConnectionManager::getDataSource('default')
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(1083): Model->setDataSource('default')
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3408): Model->setSource('registros')
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): Model->getDataSource()
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\RegistrosController.php(20): Controller->paginate()
+#8 [internal function]: RegistrosController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(482): ReflectionMethod->invokeArgs(Object(RegistrosController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-09-13 14:13:18 Error: [MissingConnectionException] Database connection "Postgres" is missing, or could not be created.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Model\ConnectionManager.php(101): DboSource->__construct(Array)
+#1 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3382): ConnectionManager::getDataSource('default')
+#2 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(1083): Model->setDataSource('default')
+#3 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(3408): Model->setSource('registros')
+#4 C:\xampp\cakephp-2.1\lib\Cake\Model\Model.php(2663): Model->getDataSource()
+#5 C:\xampp\cakephp-2.1\lib\Cake\Controller\Component\PaginatorComponent.php(172): Model->find('all', Array)
+#6 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#7 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\Controller\RegistrosController.php(20): Controller->paginate()
+#8 [internal function]: RegistrosController->index()
+#9 C:\xampp\cakephp-2.1\lib\Cake\Controller\Controller.php(482): ReflectionMethod->invokeArgs(Object(RegistrosController), Array)
+#10 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-10-14 21:38:40 Error: [MissingActionException] Action RegistrosController::webroot() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:47 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:47 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:48 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:52 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:52 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:52 Error: [MissingActionException] Action RegistrosController::img() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:52 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:52 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:52 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:52 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:52 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:52 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-14 21:41:52 Error: [MissingActionException] Action RegistrosController::js() could not be found.
+#0 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cakephp-2.1\lib\Cake\Routing\Dispatcher.php(85): Dispatcher->_invoke(Object(RegistrosController), Object(CakeRequest), Object(CakeResponse))
+#2 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(101): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-03 23:21:06 Error: [MissingControllerException] Controller class ResgistrosController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-03 23:21:12 Error: [MissingControllerException] Controller class ResgistrosController could not be found.
+#0 D:\elvis.caceres\Dropbox\My projects\labinfsis\src\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

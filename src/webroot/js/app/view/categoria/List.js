@@ -23,7 +23,7 @@ Ext.define('labinfsis.view.categoria.List' ,{
             region: 'center',
             padding: '5 5 5 0',
             items: [{
-                id:'img-chooser-view',
+                //id:'img-chooser-view',
                 xtype: 'categoriaview',
                 trackOver: true,
                 region:'center'
